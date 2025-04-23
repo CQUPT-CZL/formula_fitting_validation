@@ -1,0 +1,15 @@
+paths:
+  llm_output: ../data/sft_llm_output/pred.jsonl
+  raw_data: ../data/raw_data/raw_data_test.json
+  prompt: ../data/prompt/prompt.txt
+  output_dir: ../output/
+model:
+  type: deepseek-chat
+  api_key: sk-07a5ae9fd7744216b6bf26209fd1b5cc
+  base_url: https://api.deepseek.com/v1
+  temperature: 0.0
+metrics:
+  - mae
+logging:
+  level: INFO
+  file: ../output/logs/evaluation.log
