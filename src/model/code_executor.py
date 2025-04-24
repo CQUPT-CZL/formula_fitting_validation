@@ -1,9 +1,9 @@
 import re
 import logging
+import os
 from typing import Callable, Optional
 
 def safe_exec(code: str, scope: dict) -> Optional[Callable]:
-    """Safely execute Python code and return calculate_value function."""
     try:
         exec(code, scope)
         if 'calculate_value' in scope and callable(scope['calculate_value']):
@@ -16,7 +16,6 @@ def safe_exec(code: str, scope: dict) -> Optional[Callable]:
         return None
 
 def extract_code_block(text: str) -> Optional[str]:
-    """Extract Python code block from LLM output."""
     match = re.search(r"```python\n(.*)\n```", text, re.DOTALL)
     if match:
         code = match.group(1).strip()
@@ -24,3 +23,18 @@ def extract_code_block(text: str) -> Optional[str]:
         return code
     logging.error("No Python code block found")
     return None
+
+def load_saved_code(file_path: str) -> Optional[Callable]:
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            code = f.read()
+        scope = {}
+        exec(code, scope)
+        if 'calculate_value' in scope and callable(scope['calculate_value']):
+            logging.info(f"Loaded calculate_value from {file_path}")
+            return scope['calculate_value']
+        logging.error(f"No valid calculate_value in {file_path}")
+        return None
+    except Exception as e:
+        logging.error(f"Error loading code from {file_path}: {e}")
+        return None

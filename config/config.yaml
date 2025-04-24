@@ -3,6 +3,7 @@ paths:
   raw_data: ../data/raw_data/raw_data_test.json
   prompt: ../data/prompt/prompt.txt
   output_dir: ../output/
+  generated_code_dir: output/generated_code/
 model:
   type: deepseek-chat
   api_key: sk-07a5ae9fd7744216b6bf26209fd1b5cc

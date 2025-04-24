@@ -1,0 +1,327 @@
+2025-04-23 17:05:54,608 [INFO] Logging initialized
+2025-04-23 17:05:54,609 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
+2025-04-23 17:05:54,609 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
+2025-04-23 17:05:54,609 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-23 17:05:54,627 [INFO] Initialized LLM: deepseek
+2025-04-23 17:05:54,628 [INFO] Processing pair 1/10
+2025-04-23 17:05:54,628 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:54,628 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:54,795 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:54,796 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,796 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,796 [INFO] Processing pair 2/10
+2025-04-23 17:05:54,796 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:54,796 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:54,847 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:54,847 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,847 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,847 [INFO] Processing pair 3/10
+2025-04-23 17:05:54,847 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:54,847 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:54,902 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:54,903 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,903 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,903 [INFO] Processing pair 4/10
+2025-04-23 17:05:54,903 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:54,903 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:54,960 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:54,960 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,960 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:54,960 [INFO] Processing pair 5/10
+2025-04-23 17:05:54,960 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:54,960 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:55,015 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:55,015 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,016 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,016 [INFO] Processing pair 6/10
+2025-04-23 17:05:55,016 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:55,016 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:55,063 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:55,064 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,064 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,064 [INFO] Processing pair 7/10
+2025-04-23 17:05:55,064 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:55,064 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:55,115 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:55,116 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,116 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,116 [INFO] Processing pair 8/10
+2025-04-23 17:05:55,116 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:55,116 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:55,170 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:55,171 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,171 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,171 [INFO] Processing pair 9/10
+2025-04-23 17:05:55,171 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:55,171 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:55,226 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:55,227 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,227 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,227 [INFO] Processing pair 10/10
+2025-04-23 17:05:55,227 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:05:55,227 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:05:55,340 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:05:55,341 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,341 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-23 17:05:55,342 [INFO] Saved results to ../output/results/metrics_results.json
+2025-04-23 17:09:00,156 [INFO] Logging initialized
+2025-04-23 17:09:00,157 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
+2025-04-23 17:09:00,157 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
+2025-04-23 17:09:00,158 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-23 17:09:46,187 [INFO] Initialized LLM: deepseek
+2025-04-23 17:10:01,857 [INFO] Processing pair 1/10
+2025-04-23 17:10:48,205 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:10:53,307 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:11:03,802 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-23 17:11:38,286 [INFO] Logging initialized
+2025-04-23 17:11:38,287 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
+2025-04-23 17:11:38,287 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
+2025-04-23 17:11:38,287 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-23 17:11:38,305 [INFO] Initialized LLM: deepseek-chat
+2025-04-23 17:11:38,305 [INFO] Processing pair 1/10
+2025-04-23 17:11:38,305 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:11:38,305 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:11:38,511 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:11:47,210 [INFO] Generated code
+2025-04-23 17:11:47,210 [INFO] Extracted Python code block
+2025-04-23 17:11:47,210 [INFO] Defined calculate_value function
+2025-04-23 17:11:47,211 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.8181818181818182
+2025-04-23 17:11:47,211 [INFO] Evaluation results: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 0.8181818181818182}
+2025-04-23 17:11:47,211 [INFO] Processing pair 2/10
+2025-04-23 17:11:47,211 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:11:47,211 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:11:47,273 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:11:52,814 [INFO] Generated code
+2025-04-23 17:11:52,815 [INFO] Extracted Python code block
+2025-04-23 17:11:52,815 [INFO] Defined calculate_value function
+2025-04-23 17:11:52,815 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
+2025-04-23 17:11:52,815 [INFO] Evaluation results: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
+2025-04-23 17:11:52,815 [INFO] Processing pair 3/10
+2025-04-23 17:11:52,815 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:11:52,815 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:11:52,942 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:00,625 [INFO] Generated code
+2025-04-23 17:12:00,626 [INFO] Extracted Python code block
+2025-04-23 17:12:00,626 [INFO] Defined calculate_value function
+2025-04-23 17:12:00,626 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.38461538461538464
+2025-04-23 17:12:00,626 [INFO] Evaluation results: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 0.38461538461538464}
+2025-04-23 17:12:00,626 [INFO] Processing pair 4/10
+2025-04-23 17:12:00,626 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:12:00,626 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:12:00,719 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:06,921 [INFO] Generated code
+2025-04-23 17:12:06,922 [INFO] Extracted Python code block
+2025-04-23 17:12:06,922 [INFO] Defined calculate_value function
+2025-04-23 17:12:06,922 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.7
+2025-04-23 17:12:06,922 [INFO] Evaluation results: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.7}
+2025-04-23 17:12:06,922 [INFO] Processing pair 5/10
+2025-04-23 17:12:06,922 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:12:06,922 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:12:06,999 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:12,944 [INFO] Generated code
+2025-04-23 17:12:12,945 [INFO] Extracted Python code block
+2025-04-23 17:12:12,945 [INFO] Defined calculate_value function
+2025-04-23 17:12:12,945 [INFO] Computed MAE for variables ['a', 'b', 'c']: 2.186363636363637
+2025-04-23 17:12:12,946 [INFO] Evaluation results: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 2.186363636363637}
+2025-04-23 17:12:12,946 [INFO] Processing pair 6/10
+2025-04-23 17:12:12,946 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:12:12,946 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:12:13,206 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:20,545 [INFO] Generated code
+2025-04-23 17:12:20,545 [INFO] Extracted Python code block
+2025-04-23 17:12:20,545 [INFO] Defined calculate_value function
+2025-04-23 17:12:20,546 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.42666666666666614
+2025-04-23 17:12:20,546 [INFO] Evaluation results: {'valid_samples': 12, 'variables': ['a', 'b', 'c'], 'mae': 0.42666666666666614}
+2025-04-23 17:12:20,546 [INFO] Processing pair 7/10
+2025-04-23 17:12:20,546 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:12:20,546 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:12:20,647 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:25,787 [INFO] Generated code
+2025-04-23 17:12:25,787 [INFO] Extracted Python code block
+2025-04-23 17:12:25,787 [INFO] Defined calculate_value function
+2025-04-23 17:12:25,788 [INFO] Computed MAE for variables ['a', 'b', 'c']: 4.615384615384615
+2025-04-23 17:12:25,788 [INFO] Evaluation results: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 4.615384615384615}
+2025-04-23 17:12:25,788 [INFO] Processing pair 8/10
+2025-04-23 17:12:25,788 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:12:25,788 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:12:25,858 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:31,328 [INFO] Generated code
+2025-04-23 17:12:31,329 [INFO] Extracted Python code block
+2025-04-23 17:12:31,329 [INFO] Defined calculate_value function
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 1: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 2: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 3: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 4: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 5: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 6: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 7: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 8: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 9: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 10: calculate_value() missing 1 required positional argument: 'k'
+2025-04-23 17:12:31,329 [INFO] Processing pair 9/10
+2025-04-23 17:12:31,329 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:12:31,329 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:12:31,413 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:37,268 [INFO] Generated code
+2025-04-23 17:12:37,269 [INFO] Extracted Python code block
+2025-04-23 17:12:37,269 [INFO] Defined calculate_value function
+2025-04-23 17:12:37,270 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
+2025-04-23 17:12:37,270 [INFO] Evaluation results: {'valid_samples': 15, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
+2025-04-23 17:12:37,270 [INFO] Processing pair 10/10
+2025-04-23 17:12:37,270 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-23 17:12:37,270 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
+2025-04-23 17:12:37,338 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-23 17:12:42,696 [INFO] Generated code
+2025-04-23 17:12:42,696 [INFO] Extracted Python code block
+2025-04-23 17:12:42,697 [INFO] Defined calculate_value function
+2025-04-23 17:12:42,697 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.5555555555555556
+2025-04-23 17:12:42,697 [INFO] Evaluation results: {'valid_samples': 9, 'variables': ['a', 'b', 'c'], 'mae': 0.5555555555555556}
+2025-04-23 17:12:42,699 [INFO] Saved results to ../output/results/metrics_results.json
+2025-04-24 16:11:45,417 [INFO] Logging initialized
+2025-04-24 16:11:45,418 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
+2025-04-24 16:11:45,418 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
+2025-04-24 16:11:45,418 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-24 16:11:45,445 [INFO] Initialized LLM: deepseek-chat
+2025-04-24 16:11:45,445 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:11:45,445 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
+2025-04-24 16:11:45,445 [ERROR] Error loading code from /Users/cuiziliang/Projects/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/output/generated_code/code_1.py'
+2025-04-24 16:11:45,666 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:12:04,231 [INFO] Logging initialized
+2025-04-24 16:12:04,232 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
+2025-04-24 16:12:04,232 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
+2025-04-24 16:12:04,232 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-24 16:12:04,253 [INFO] Initialized LLM: deepseek-chat
+2025-04-24 16:12:04,253 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:12:04,253 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
+2025-04-24 16:12:04,253 [ERROR] Error loading code from /Users/cuiziliang/Projects/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/output/generated_code/code_1.py'
+2025-04-24 16:12:04,455 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:14:26,626 [INFO] Logging initialized
+2025-04-24 16:14:26,627 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
+2025-04-24 16:14:26,627 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
+2025-04-24 16:14:26,627 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-24 16:14:26,648 [INFO] Initialized LLM: deepseek-chat
+2025-04-24 16:14:26,648 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:14:26,648 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
+2025-04-24 16:14:26,649 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py'
+2025-04-24 16:14:26,948 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:24:26,935 [ERROR] Error generating code: Expecting value: line 10 column 1 (char 9)
+2025-04-24 16:24:26,937 [ERROR] Failed to generate or execute code for pair 1: Expecting value: line 10 column 1 (char 9)
+2025-04-24 16:24:26,937 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:24:26,937 [INFO] Evaluating pair 2 with variables: ['a', 'b', 'c']
+2025-04-24 16:24:26,938 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py'
+2025-04-24 16:24:27,012 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:25:09,226 [INFO] Logging initialized
+2025-04-24 16:25:09,227 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
+2025-04-24 16:25:09,227 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
+2025-04-24 16:25:09,227 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-24 16:25:09,259 [INFO] Initialized LLM: deepseek-chat
+2025-04-24 16:25:09,259 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:25:09,259 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
+2025-04-24 16:25:09,259 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py'
+2025-04-24 16:25:09,467 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:27:42,716 [INFO] Generated code
+2025-04-24 16:27:42,717 [INFO] Extracted Python code block
+2025-04-24 16:27:42,718 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py
+2025-04-24 16:27:42,718 [INFO] Defined calculate_value function
+2025-04-24 16:27:42,719 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.8181818181818182
+2025-04-24 16:27:42,719 [INFO] Evaluation results for pair 1: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 0.8181818181818182}
+2025-04-24 16:27:42,720 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:27:42,720 [INFO] Evaluating pair 2 with variables: ['a', 'b', 'c']
+2025-04-24 16:27:42,720 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py'
+2025-04-24 16:27:42,804 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:27:52,140 [INFO] Generated code
+2025-04-24 16:27:52,140 [INFO] Extracted Python code block
+2025-04-24 16:27:52,141 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py
+2025-04-24 16:27:52,141 [INFO] Defined calculate_value function
+2025-04-24 16:27:52,141 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
+2025-04-24 16:27:52,141 [INFO] Evaluation results for pair 2: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
+2025-04-24 16:27:52,141 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:27:52,141 [INFO] Evaluating pair 3 with variables: ['a', 'b', 'c']
+2025-04-24 16:27:52,141 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_3.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_3.py'
+2025-04-24 16:27:52,206 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:27:57,692 [INFO] Generated code
+2025-04-24 16:27:57,692 [INFO] Extracted Python code block
+2025-04-24 16:27:57,693 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_3.py
+2025-04-24 16:27:57,694 [INFO] Defined calculate_value function
+2025-04-24 16:27:57,694 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.38461538461538464
+2025-04-24 16:27:57,694 [INFO] Evaluation results for pair 3: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 0.38461538461538464}
+2025-04-24 16:27:57,694 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:27:57,694 [INFO] Evaluating pair 4 with variables: ['a', 'b', 'c']
+2025-04-24 16:27:57,694 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_4.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_4.py'
+2025-04-24 16:27:57,756 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:28:01,856 [INFO] Generated code
+2025-04-24 16:28:01,856 [INFO] Extracted Python code block
+2025-04-24 16:28:01,857 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_4.py
+2025-04-24 16:28:01,857 [INFO] Defined calculate_value function
+2025-04-24 16:28:01,857 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.7
+2025-04-24 16:28:01,857 [INFO] Evaluation results for pair 4: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.7}
+2025-04-24 16:28:01,857 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:28:01,857 [INFO] Evaluating pair 5 with variables: ['a', 'b', 'c']
+2025-04-24 16:28:01,857 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_5.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_5.py'
+2025-04-24 16:28:01,925 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:28:07,065 [INFO] Generated code
+2025-04-24 16:28:07,065 [INFO] Extracted Python code block
+2025-04-24 16:28:07,066 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_5.py
+2025-04-24 16:28:07,066 [INFO] Defined calculate_value function
+2025-04-24 16:28:07,066 [INFO] Computed MAE for variables ['a', 'b', 'c']: 2.186363636363637
+2025-04-24 16:28:07,066 [INFO] Evaluation results for pair 5: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 2.186363636363637}
+2025-04-24 16:28:07,066 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:28:07,066 [INFO] Evaluating pair 6 with variables: ['a', 'b', 'c']
+2025-04-24 16:28:07,067 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_6.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_6.py'
+2025-04-24 16:28:07,140 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:28:13,658 [INFO] Generated code
+2025-04-24 16:28:13,661 [INFO] Extracted Python code block
+2025-04-24 16:28:13,661 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_6.py
+2025-04-24 16:28:13,662 [INFO] Defined calculate_value function
+2025-04-24 16:28:13,662 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.42666666666666614
+2025-04-24 16:28:13,662 [INFO] Evaluation results for pair 6: {'valid_samples': 12, 'variables': ['a', 'b', 'c'], 'mae': 0.42666666666666614}
+2025-04-24 16:28:13,662 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:28:13,662 [INFO] Evaluating pair 7 with variables: ['a', 'b', 'c']
+2025-04-24 16:28:13,662 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_7.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_7.py'
+2025-04-24 16:28:13,727 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:28:20,200 [INFO] Generated code
+2025-04-24 16:28:20,200 [INFO] Extracted Python code block
+2025-04-24 16:28:20,201 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_7.py
+2025-04-24 16:28:20,201 [INFO] Defined calculate_value function
+2025-04-24 16:28:20,201 [INFO] Computed MAE for variables ['a', 'b', 'c']: 4.615384615384615
+2025-04-24 16:28:20,201 [INFO] Evaluation results for pair 7: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 4.615384615384615}
+2025-04-24 16:28:20,201 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:28:20,201 [INFO] Evaluating pair 8 with variables: ['a', 'b', 'c']
+2025-04-24 16:28:20,201 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_8.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_8.py'
+2025-04-24 16:28:20,274 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:28:25,217 [INFO] Generated code
+2025-04-24 16:28:25,218 [INFO] Extracted Python code block
+2025-04-24 16:28:25,219 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_8.py
+2025-04-24 16:28:25,219 [INFO] Defined calculate_value function
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 1: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 2: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 3: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 4: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 5: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 6: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 7: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 8: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 9: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 10: calculate_value() missing 1 required positional argument: 'k'
+2025-04-24 16:28:25,219 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:28:25,219 [INFO] Evaluating pair 9 with variables: ['a', 'b', 'c']
+2025-04-24 16:28:25,219 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_9.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_9.py'
+2025-04-24 16:28:25,419 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:28:30,642 [INFO] Generated code
+2025-04-24 16:28:30,642 [INFO] Extracted Python code block
+2025-04-24 16:28:30,643 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_9.py
+2025-04-24 16:28:30,643 [INFO] Defined calculate_value function
+2025-04-24 16:28:30,644 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
+2025-04-24 16:28:30,644 [INFO] Evaluation results for pair 9: {'valid_samples': 15, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
+2025-04-24 16:28:30,644 [INFO] Parsed variable names: ['a', 'b', 'c']
+2025-04-24 16:28:30,644 [INFO] Evaluating pair 10 with variables: ['a', 'b', 'c']
+2025-04-24 16:28:30,644 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_10.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_10.py'
+2025-04-24 16:28:30,722 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-24 16:28:35,556 [INFO] Generated code
+2025-04-24 16:28:35,557 [INFO] Extracted Python code block
+2025-04-24 16:28:35,558 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_10.py
+2025-04-24 16:28:35,558 [INFO] Defined calculate_value function
+2025-04-24 16:28:35,558 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.5555555555555556
+2025-04-24 16:28:35,558 [INFO] Evaluation results for pair 10: {'valid_samples': 9, 'variables': ['a', 'b', 'c'], 'mae': 0.5555555555555556}
+2025-04-24 16:28:35,559 [INFO] Saved results to ../output/results/metrics_results.json
+2025-04-24 16:28:35,560 [INFO] Saved code index to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/index.json
