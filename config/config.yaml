@@ -1,8 +1,9 @@
+
 paths:
-  llm_output: ../data/sft_llm_output/pred.jsonl
-  raw_data: ../data/raw_data/raw_data_test.json
+  input_data: data/llm_output/pred.jsonl
+  raw_data: data/raw_data/test.json
   prompt: ../data/prompt/prompt.txt
-  output_dir: ../output/
+  output_dir: output/
   generated_code_dir: output/generated_code/
 model:
   type: deepseek-chat
@@ -11,6 +12,7 @@ model:
   temperature: 0.0
 metrics:
   - mae
+  - ice
 logging:
   level: INFO
-  file: ../output/logs/evaluation.log
+  file: output/logs/evaluation.log
