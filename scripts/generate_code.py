@@ -64,11 +64,11 @@ def main():
             continue
         code = generate_code_for_entry(entry['predict'], llm_interface, prompt_template)
         entry['code'] = code
-        if code:
-            code_file = os.path.join(code_dir, f"code_{idx + 1}.py")
-            with open(code_file, 'w', encoding='utf-8') as f:
-                f.write(code)
-            logging.info(f"Saved code to {code_file}")
+        # if code:
+        #     code_file = os.path.join(code_dir, f"code_{idx + 1}.py")
+        #     with open(code_file, 'w', encoding='utf-8') as f:
+        #         f.write(code)
+        #     logging.info(f"Saved code to {code_file}")
 
     # Save updated JSON
     output_path = os.path.join(project_root, config['paths']['generated_code_dir'], 'data_with_code.json')

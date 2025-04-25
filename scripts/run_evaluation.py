@@ -7,45 +7,22 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import yaml
 import json
 import logging
-from src.data.loader import load_jsonl, load_json, load_prompt, parse_variable_names, validate_data
-from src.model.llm_interface import LLMInterface
-from src.model.code_executor import extract_code_block, safe_exec, load_saved_code
+from src.data.loader import parse_variable_names, validate_data, load_json
+from src.model.code_executor import safe_exec
 from src.metrics.point_metrics import MAE
 from src.utils.my_logging import setup_logging
 from typing import List, Dict, Any, Optional
 
-
 def evaluate_pair(
-        analysis_text: str,
-        raw_data: List[Dict[str, Any]],
-        llm_interface: 'LLMInterface',
-        prompt_template: str,
-        metrics: List['BaseMetric'],
-        code_dir: str,
-        pair_index: int
-) -> Optional[Dict[str, Any]]:
+    raw_data: List[Dict[str, Any]],
+    code: str,
+    metrics: List['BaseMetric'],
+    pair_index: int
+) -> Optional[Dict[str, float]]:
     variable_names = parse_variable_names(raw_data)
     logging.info(f"Evaluating pair {pair_index} with variables: {variable_names}")
 
-    # Check for saved code
-    code_file = os.path.join(code_dir, f"code_{pair_index}.py")
-    generated_function = load_saved_code(code_file)
-
-    # Generate code if not found
-    if not generated_function:
-        try:
-            llm_output = llm_interface.generate_code(prompt_template, analysis_text)
-            code = extract_code_block(llm_output)
-            if code:
-                # Save code
-                os.makedirs(code_dir, exist_ok=True)
-                with open(code_file, 'w', encoding='utf-8') as f:
-                    f.write(code)
-                logging.info(f"Saved code to {code_file}")
-                generated_function = safe_exec(code, {})
-        except Exception as e:
-            logging.error(f"Failed to generate or execute code for pair {pair_index}: {e}")
-            return None
+    generated_function = safe_exec(code, {})
 
     if generated_function:
         predictions = []
@@ -71,10 +48,11 @@ def evaluate_pair(
                 logging.error(f"Error evaluating sample {sample_idx + 1}: {e}")
 
         if valid_samples > 0:
-            results = {"valid_samples": valid_samples, "variables": variable_names}
+            results = {}
             for metric in metrics:
                 try:
-                    results[metric.__class__.__name__.lower()] = metric.compute(
+                    metric_name = metric.__class__.__name__.lower()
+                    results[metric_name] = metric.compute(
                         predictions, ground_truths, raw_data, variable_names
                     )
                 except Exception as e:
@@ -83,19 +61,10 @@ def evaluate_pair(
             return results
     return None
 
-
-def save_code_index(code_dir: str, index_data: List[Dict]):
-    index_file = os.path.join(code_dir, "index.json")
-    with open(index_file, 'w', encoding='utf-8') as f:
-        json.dump(index_data, f, indent=2)
-    logging.info(f"Saved code index to {index_file}")
-
-
 def main():
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    print(f"Project root: {project_root}")
     config_path = os.path.join(project_root, 'config', 'config.yaml')
-    # config_path = r'/Users/cuiziliang/Projects/formula_fitting_validation/config/config.yaml'
+
     if not os.path.exists(config_path):
         logging.error(f"Config file not found at: {config_path}")
         raise FileNotFoundError(f"Config file not found at: {config_path}")
@@ -103,50 +72,47 @@ def main():
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)
 
-    llm_output_path = os.path.join(project_root, config['paths']['llm_output'])
-    print(f"Looking for pred.jsonl at: {llm_output_path}")
-    print(f"Looking for test.json at: {os.path.join(project_root, config['paths']['raw_data'])}")
-    print(f"Looking for prompt.txt at: {os.path.join(project_root, config['paths']['prompt'])}")
-
     setup_logging(config)
-    analysis_texts = load_jsonl(config['paths']['llm_output'])
-    raw_datasets = load_json(config['paths']['raw_data'])
-    prompt_template = load_prompt(config['paths']['prompt'])
-    validate_data(analysis_texts, raw_datasets)
 
-    llm_interface = LLMInterface(config)
+    # Load data with code
+    data_with_code_path = os.path.join(project_root, config['paths']['generated_code_dir'], 'data_with_code.json')
+    if not os.path.exists(data_with_code_path):
+        logging.error(f"Data with code not found at: {data_with_code_path}")
+        raise FileNotFoundError(f"Data with code not found at: {data_with_code_path}")
+
+    with open(data_with_code_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+
     metrics = [MAE()]
-    code_dir = os.path.join(project_root, config['paths']['generated_code_dir'])
+    metric_results = {metric.__class__.__name__.lower(): [] for metric in metrics}
 
-    results = []
-    code_index = []
-    for idx, (analysis_text, dataset) in enumerate(zip(analysis_texts, raw_datasets)):
+    for idx, en in enumerate(data):
+        if 'code' not in en or not en['code']:
+            logging.warning(f"Pair {idx + 1} missing code")
+            for metric in metrics:
+                metric_results[metric.__class__.__name__.lower()].append(None)
+            continue
         result = evaluate_pair(
-            analysis_text['predict'],
-            dataset['raw_data'],
-            llm_interface,
-            prompt_template,
+            en['raw_data'],
+            en['code'],
             metrics,
-            code_dir,
             idx + 1
         )
         if result:
-            results.append(result)
-            code_index.append({
-                "pair_index": idx + 1,
-                "analysis_text": analysis_text['predict'],
-                "code_file": f"code_{idx + 1}.py"
-            })
+            for metric in metrics:
+                metric_name = metric.__class__.__name__.lower()
+                metric_results[metric_name].append(result[metric_name])
+        else:
+            for metric in metrics:
+                metric_results[metric.__class__.__name__.lower()].append(None)
 
-    # Save results and code index
-    os.makedirs(os.path.join(config['paths']['output_dir'], 'results'), exist_ok=True)
-    results_path = os.path.join(config['paths']['output_dir'], 'results', 'metrics_results.json')
+    # Save results
+    os.makedirs(os.path.join(project_root, config['paths']['output_dir'], 'results'), exist_ok=True)
+    results_path = os.path.join(project_root, config['paths']['output_dir'], 'results', 'metrics_results.json')
     with open(results_path, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2)
+        json.dump(metric_results, f, indent=2)
     logging.info(f"Saved results to {results_path}")
-
-    save_code_index(code_dir, code_index)
-
 
 if __name__ == "__main__":
     main()
