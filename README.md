@@ -1,24 +1,7 @@
-# formula_fitting_validation
+# 评估大模型
 
-A system to evaluate LLM performance in formula fitting tasks.
+## 当一个新的文件来的时候怎么预测效果呢？
+1先由prompt生成raw_data,
+2然后在由pred生成code
+3然后在进行评估
 
-## Data Format
-- `pred.jsonl`: LLM output with `prompt`, `predict`, `label`.
-- `test.json`: Raw data with `instruction` and `raw_data` (a, b, c, result).
-- `prompt.txt`: Template for generating `calculate_value` function.
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    ```
-
-## Output File Sharing
-- Output files (`metrics_results.json`, plots) are stored in `output/` and tracked by Git LFS.
-- To upload new output:
-  ```bash
-  make evaluate
-  git add output/results/
-  git commit -m "Update metrics results"
-  git push
-  git lfs push origin main

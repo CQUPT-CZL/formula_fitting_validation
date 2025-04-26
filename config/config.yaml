@@ -1,8 +1,10 @@
 
 paths:
-  input_data: data/llm_output/pred_with_raw.jsonl
+  input_data: data/llm_output/generated_predictions.jsonl
+  generated_predictions: data/llm_output/pred_with_raw.jsonl
   raw_data: data/raw_data/test.json
   prompt: ../data/prompt/prompt.txt
+  prompt_raw: ../data/prompt/prompt_with_raw.txt
   output_dir: output/
   generated_code_dir: output/generated_code/
 model:
@@ -15,4 +17,4 @@ metrics:
   - ice
 logging:
   level: INFO
-  file: output/logs/evaluation.log
+  file: ../output/logs/evaluation.log

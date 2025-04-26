@@ -28,3 +28,15 @@ class LLMInterface:
         except Exception as e:
             logging.error(f"Error generating code: {e}")
             raise
+
+
+    def generate_raw_data(self, prompt_template: str, analysis_text: str) -> str:
+        """Generate code using LLM."""
+        try:
+            chain = PromptTemplate.from_template(prompt_template) | self.llm | StrOutputParser()
+            output = chain.invoke({"text": analysis_text})
+            logging.info("Generated raw data")
+            return output
+        except Exception as e:
+            logging.error(f"Error generating raw data: {e}")
+            raise
