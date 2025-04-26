@@ -1,327 +1,812 @@
-2025-04-23 17:05:54,608 [INFO] Logging initialized
-2025-04-23 17:05:54,609 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
-2025-04-23 17:05:54,609 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
-2025-04-23 17:05:54,609 [INFO] Loaded prompt from ../data/prompt/prompt.txt
-2025-04-23 17:05:54,627 [INFO] Initialized LLM: deepseek
-2025-04-23 17:05:54,628 [INFO] Processing pair 1/10
-2025-04-23 17:05:54,628 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:54,628 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:54,795 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:54,796 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,796 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,796 [INFO] Processing pair 2/10
-2025-04-23 17:05:54,796 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:54,796 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:54,847 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:54,847 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,847 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,847 [INFO] Processing pair 3/10
-2025-04-23 17:05:54,847 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:54,847 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:54,902 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:54,903 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,903 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,903 [INFO] Processing pair 4/10
-2025-04-23 17:05:54,903 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:54,903 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:54,960 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:54,960 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,960 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:54,960 [INFO] Processing pair 5/10
-2025-04-23 17:05:54,960 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:54,960 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:55,015 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:55,015 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,016 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,016 [INFO] Processing pair 6/10
-2025-04-23 17:05:55,016 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:55,016 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:55,063 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:55,064 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,064 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,064 [INFO] Processing pair 7/10
-2025-04-23 17:05:55,064 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:55,064 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:55,115 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:55,116 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,116 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,116 [INFO] Processing pair 8/10
-2025-04-23 17:05:55,116 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:55,116 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:55,170 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:55,171 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,171 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,171 [INFO] Processing pair 9/10
-2025-04-23 17:05:55,171 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:55,171 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:55,226 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:55,227 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,227 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,227 [INFO] Processing pair 10/10
-2025-04-23 17:05:55,227 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:05:55,227 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:05:55,340 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:05:55,341 [ERROR] Error generating code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,341 [ERROR] Failed to generate or execute code: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
-2025-04-23 17:05:55,342 [INFO] Saved results to ../output/results/metrics_results.json
-2025-04-23 17:09:00,156 [INFO] Logging initialized
-2025-04-23 17:09:00,157 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
-2025-04-23 17:09:00,157 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
-2025-04-23 17:09:00,158 [INFO] Loaded prompt from ../data/prompt/prompt.txt
-2025-04-23 17:09:46,187 [INFO] Initialized LLM: deepseek
-2025-04-23 17:10:01,857 [INFO] Processing pair 1/10
-2025-04-23 17:10:48,205 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:10:53,307 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:11:03,802 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2025-04-23 17:11:38,286 [INFO] Logging initialized
-2025-04-23 17:11:38,287 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
-2025-04-23 17:11:38,287 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
-2025-04-23 17:11:38,287 [INFO] Loaded prompt from ../data/prompt/prompt.txt
-2025-04-23 17:11:38,305 [INFO] Initialized LLM: deepseek-chat
-2025-04-23 17:11:38,305 [INFO] Processing pair 1/10
-2025-04-23 17:11:38,305 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:11:38,305 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:11:38,511 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:11:47,210 [INFO] Generated code
-2025-04-23 17:11:47,210 [INFO] Extracted Python code block
-2025-04-23 17:11:47,210 [INFO] Defined calculate_value function
-2025-04-23 17:11:47,211 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.8181818181818182
-2025-04-23 17:11:47,211 [INFO] Evaluation results: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 0.8181818181818182}
-2025-04-23 17:11:47,211 [INFO] Processing pair 2/10
-2025-04-23 17:11:47,211 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:11:47,211 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:11:47,273 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:11:52,814 [INFO] Generated code
-2025-04-23 17:11:52,815 [INFO] Extracted Python code block
-2025-04-23 17:11:52,815 [INFO] Defined calculate_value function
-2025-04-23 17:11:52,815 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
-2025-04-23 17:11:52,815 [INFO] Evaluation results: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
-2025-04-23 17:11:52,815 [INFO] Processing pair 3/10
-2025-04-23 17:11:52,815 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:11:52,815 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:11:52,942 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:00,625 [INFO] Generated code
-2025-04-23 17:12:00,626 [INFO] Extracted Python code block
-2025-04-23 17:12:00,626 [INFO] Defined calculate_value function
-2025-04-23 17:12:00,626 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.38461538461538464
-2025-04-23 17:12:00,626 [INFO] Evaluation results: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 0.38461538461538464}
-2025-04-23 17:12:00,626 [INFO] Processing pair 4/10
-2025-04-23 17:12:00,626 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:12:00,626 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:12:00,719 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:06,921 [INFO] Generated code
-2025-04-23 17:12:06,922 [INFO] Extracted Python code block
-2025-04-23 17:12:06,922 [INFO] Defined calculate_value function
-2025-04-23 17:12:06,922 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.7
-2025-04-23 17:12:06,922 [INFO] Evaluation results: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.7}
-2025-04-23 17:12:06,922 [INFO] Processing pair 5/10
-2025-04-23 17:12:06,922 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:12:06,922 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:12:06,999 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:12,944 [INFO] Generated code
-2025-04-23 17:12:12,945 [INFO] Extracted Python code block
-2025-04-23 17:12:12,945 [INFO] Defined calculate_value function
-2025-04-23 17:12:12,945 [INFO] Computed MAE for variables ['a', 'b', 'c']: 2.186363636363637
-2025-04-23 17:12:12,946 [INFO] Evaluation results: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 2.186363636363637}
-2025-04-23 17:12:12,946 [INFO] Processing pair 6/10
-2025-04-23 17:12:12,946 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:12:12,946 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:12:13,206 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:20,545 [INFO] Generated code
-2025-04-23 17:12:20,545 [INFO] Extracted Python code block
-2025-04-23 17:12:20,545 [INFO] Defined calculate_value function
-2025-04-23 17:12:20,546 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.42666666666666614
-2025-04-23 17:12:20,546 [INFO] Evaluation results: {'valid_samples': 12, 'variables': ['a', 'b', 'c'], 'mae': 0.42666666666666614}
-2025-04-23 17:12:20,546 [INFO] Processing pair 7/10
-2025-04-23 17:12:20,546 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:12:20,546 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:12:20,647 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:25,787 [INFO] Generated code
-2025-04-23 17:12:25,787 [INFO] Extracted Python code block
-2025-04-23 17:12:25,787 [INFO] Defined calculate_value function
-2025-04-23 17:12:25,788 [INFO] Computed MAE for variables ['a', 'b', 'c']: 4.615384615384615
-2025-04-23 17:12:25,788 [INFO] Evaluation results: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 4.615384615384615}
-2025-04-23 17:12:25,788 [INFO] Processing pair 8/10
-2025-04-23 17:12:25,788 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:12:25,788 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:12:25,858 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:31,328 [INFO] Generated code
-2025-04-23 17:12:31,329 [INFO] Extracted Python code block
-2025-04-23 17:12:31,329 [INFO] Defined calculate_value function
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 1: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 2: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 3: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 4: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 5: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 6: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 7: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 8: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 9: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [ERROR] Error evaluating sample 10: calculate_value() missing 1 required positional argument: 'k'
-2025-04-23 17:12:31,329 [INFO] Processing pair 9/10
-2025-04-23 17:12:31,329 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:12:31,329 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:12:31,413 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:37,268 [INFO] Generated code
-2025-04-23 17:12:37,269 [INFO] Extracted Python code block
-2025-04-23 17:12:37,269 [INFO] Defined calculate_value function
-2025-04-23 17:12:37,270 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
-2025-04-23 17:12:37,270 [INFO] Evaluation results: {'valid_samples': 15, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
-2025-04-23 17:12:37,270 [INFO] Processing pair 10/10
-2025-04-23 17:12:37,270 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-23 17:12:37,270 [INFO] Evaluating pair with variables: ['a', 'b', 'c']
-2025-04-23 17:12:37,338 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-23 17:12:42,696 [INFO] Generated code
-2025-04-23 17:12:42,696 [INFO] Extracted Python code block
-2025-04-23 17:12:42,697 [INFO] Defined calculate_value function
-2025-04-23 17:12:42,697 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.5555555555555556
-2025-04-23 17:12:42,697 [INFO] Evaluation results: {'valid_samples': 9, 'variables': ['a', 'b', 'c'], 'mae': 0.5555555555555556}
-2025-04-23 17:12:42,699 [INFO] Saved results to ../output/results/metrics_results.json
-2025-04-24 16:11:45,417 [INFO] Logging initialized
-2025-04-24 16:11:45,418 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
-2025-04-24 16:11:45,418 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
-2025-04-24 16:11:45,418 [INFO] Loaded prompt from ../data/prompt/prompt.txt
-2025-04-24 16:11:45,445 [INFO] Initialized LLM: deepseek-chat
-2025-04-24 16:11:45,445 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:11:45,445 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
-2025-04-24 16:11:45,445 [ERROR] Error loading code from /Users/cuiziliang/Projects/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/output/generated_code/code_1.py'
-2025-04-24 16:11:45,666 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:12:04,231 [INFO] Logging initialized
-2025-04-24 16:12:04,232 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
-2025-04-24 16:12:04,232 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
-2025-04-24 16:12:04,232 [INFO] Loaded prompt from ../data/prompt/prompt.txt
-2025-04-24 16:12:04,253 [INFO] Initialized LLM: deepseek-chat
-2025-04-24 16:12:04,253 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:12:04,253 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
-2025-04-24 16:12:04,253 [ERROR] Error loading code from /Users/cuiziliang/Projects/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/output/generated_code/code_1.py'
-2025-04-24 16:12:04,455 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:14:26,626 [INFO] Logging initialized
-2025-04-24 16:14:26,627 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
-2025-04-24 16:14:26,627 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
-2025-04-24 16:14:26,627 [INFO] Loaded prompt from ../data/prompt/prompt.txt
-2025-04-24 16:14:26,648 [INFO] Initialized LLM: deepseek-chat
-2025-04-24 16:14:26,648 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:14:26,648 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
-2025-04-24 16:14:26,649 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py'
-2025-04-24 16:14:26,948 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:24:26,935 [ERROR] Error generating code: Expecting value: line 10 column 1 (char 9)
-2025-04-24 16:24:26,937 [ERROR] Failed to generate or execute code for pair 1: Expecting value: line 10 column 1 (char 9)
-2025-04-24 16:24:26,937 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:24:26,937 [INFO] Evaluating pair 2 with variables: ['a', 'b', 'c']
-2025-04-24 16:24:26,938 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py'
-2025-04-24 16:24:27,012 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:25:09,226 [INFO] Logging initialized
-2025-04-24 16:25:09,227 [INFO] Loaded 10 items from ../data/sft_llm_output/pred.jsonl
-2025-04-24 16:25:09,227 [INFO] Loaded 10 datasets from ../data/raw_data/raw_data_test.json
-2025-04-24 16:25:09,227 [INFO] Loaded prompt from ../data/prompt/prompt.txt
-2025-04-24 16:25:09,259 [INFO] Initialized LLM: deepseek-chat
-2025-04-24 16:25:09,259 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:25:09,259 [INFO] Evaluating pair 1 with variables: ['a', 'b', 'c']
-2025-04-24 16:25:09,259 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py'
-2025-04-24 16:25:09,467 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:27:42,716 [INFO] Generated code
-2025-04-24 16:27:42,717 [INFO] Extracted Python code block
-2025-04-24 16:27:42,718 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_1.py
-2025-04-24 16:27:42,718 [INFO] Defined calculate_value function
-2025-04-24 16:27:42,719 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.8181818181818182
-2025-04-24 16:27:42,719 [INFO] Evaluation results for pair 1: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 0.8181818181818182}
-2025-04-24 16:27:42,720 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:27:42,720 [INFO] Evaluating pair 2 with variables: ['a', 'b', 'c']
-2025-04-24 16:27:42,720 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py'
-2025-04-24 16:27:42,804 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:27:52,140 [INFO] Generated code
-2025-04-24 16:27:52,140 [INFO] Extracted Python code block
-2025-04-24 16:27:52,141 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_2.py
-2025-04-24 16:27:52,141 [INFO] Defined calculate_value function
-2025-04-24 16:27:52,141 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
-2025-04-24 16:27:52,141 [INFO] Evaluation results for pair 2: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
-2025-04-24 16:27:52,141 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:27:52,141 [INFO] Evaluating pair 3 with variables: ['a', 'b', 'c']
-2025-04-24 16:27:52,141 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_3.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_3.py'
-2025-04-24 16:27:52,206 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:27:57,692 [INFO] Generated code
-2025-04-24 16:27:57,692 [INFO] Extracted Python code block
-2025-04-24 16:27:57,693 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_3.py
-2025-04-24 16:27:57,694 [INFO] Defined calculate_value function
-2025-04-24 16:27:57,694 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.38461538461538464
-2025-04-24 16:27:57,694 [INFO] Evaluation results for pair 3: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 0.38461538461538464}
-2025-04-24 16:27:57,694 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:27:57,694 [INFO] Evaluating pair 4 with variables: ['a', 'b', 'c']
-2025-04-24 16:27:57,694 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_4.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_4.py'
-2025-04-24 16:27:57,756 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:28:01,856 [INFO] Generated code
-2025-04-24 16:28:01,856 [INFO] Extracted Python code block
-2025-04-24 16:28:01,857 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_4.py
-2025-04-24 16:28:01,857 [INFO] Defined calculate_value function
-2025-04-24 16:28:01,857 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.7
-2025-04-24 16:28:01,857 [INFO] Evaluation results for pair 4: {'valid_samples': 10, 'variables': ['a', 'b', 'c'], 'mae': 0.7}
-2025-04-24 16:28:01,857 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:28:01,857 [INFO] Evaluating pair 5 with variables: ['a', 'b', 'c']
-2025-04-24 16:28:01,857 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_5.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_5.py'
-2025-04-24 16:28:01,925 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:28:07,065 [INFO] Generated code
-2025-04-24 16:28:07,065 [INFO] Extracted Python code block
-2025-04-24 16:28:07,066 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_5.py
-2025-04-24 16:28:07,066 [INFO] Defined calculate_value function
-2025-04-24 16:28:07,066 [INFO] Computed MAE for variables ['a', 'b', 'c']: 2.186363636363637
-2025-04-24 16:28:07,066 [INFO] Evaluation results for pair 5: {'valid_samples': 11, 'variables': ['a', 'b', 'c'], 'mae': 2.186363636363637}
-2025-04-24 16:28:07,066 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:28:07,066 [INFO] Evaluating pair 6 with variables: ['a', 'b', 'c']
-2025-04-24 16:28:07,067 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_6.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_6.py'
-2025-04-24 16:28:07,140 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:28:13,658 [INFO] Generated code
-2025-04-24 16:28:13,661 [INFO] Extracted Python code block
-2025-04-24 16:28:13,661 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_6.py
-2025-04-24 16:28:13,662 [INFO] Defined calculate_value function
-2025-04-24 16:28:13,662 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.42666666666666614
-2025-04-24 16:28:13,662 [INFO] Evaluation results for pair 6: {'valid_samples': 12, 'variables': ['a', 'b', 'c'], 'mae': 0.42666666666666614}
-2025-04-24 16:28:13,662 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:28:13,662 [INFO] Evaluating pair 7 with variables: ['a', 'b', 'c']
-2025-04-24 16:28:13,662 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_7.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_7.py'
-2025-04-24 16:28:13,727 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:28:20,200 [INFO] Generated code
-2025-04-24 16:28:20,200 [INFO] Extracted Python code block
-2025-04-24 16:28:20,201 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_7.py
-2025-04-24 16:28:20,201 [INFO] Defined calculate_value function
-2025-04-24 16:28:20,201 [INFO] Computed MAE for variables ['a', 'b', 'c']: 4.615384615384615
-2025-04-24 16:28:20,201 [INFO] Evaluation results for pair 7: {'valid_samples': 13, 'variables': ['a', 'b', 'c'], 'mae': 4.615384615384615}
-2025-04-24 16:28:20,201 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:28:20,201 [INFO] Evaluating pair 8 with variables: ['a', 'b', 'c']
-2025-04-24 16:28:20,201 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_8.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_8.py'
-2025-04-24 16:28:20,274 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:28:25,217 [INFO] Generated code
-2025-04-24 16:28:25,218 [INFO] Extracted Python code block
-2025-04-24 16:28:25,219 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_8.py
-2025-04-24 16:28:25,219 [INFO] Defined calculate_value function
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 1: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 2: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 3: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 4: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 5: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 6: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 7: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 8: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 9: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [ERROR] Error evaluating sample 10: calculate_value() missing 1 required positional argument: 'k'
-2025-04-24 16:28:25,219 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:28:25,219 [INFO] Evaluating pair 9 with variables: ['a', 'b', 'c']
-2025-04-24 16:28:25,219 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_9.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_9.py'
-2025-04-24 16:28:25,419 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:28:30,642 [INFO] Generated code
-2025-04-24 16:28:30,642 [INFO] Extracted Python code block
-2025-04-24 16:28:30,643 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_9.py
-2025-04-24 16:28:30,643 [INFO] Defined calculate_value function
-2025-04-24 16:28:30,644 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.4
-2025-04-24 16:28:30,644 [INFO] Evaluation results for pair 9: {'valid_samples': 15, 'variables': ['a', 'b', 'c'], 'mae': 0.4}
-2025-04-24 16:28:30,644 [INFO] Parsed variable names: ['a', 'b', 'c']
-2025-04-24 16:28:30,644 [INFO] Evaluating pair 10 with variables: ['a', 'b', 'c']
-2025-04-24 16:28:30,644 [ERROR] Error loading code from /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_10.py: [Errno 2] No such file or directory: '/Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_10.py'
-2025-04-24 16:28:30,722 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
-2025-04-24 16:28:35,556 [INFO] Generated code
-2025-04-24 16:28:35,557 [INFO] Extracted Python code block
-2025-04-24 16:28:35,558 [INFO] Saved code to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/code_10.py
-2025-04-24 16:28:35,558 [INFO] Defined calculate_value function
-2025-04-24 16:28:35,558 [INFO] Computed MAE for variables ['a', 'b', 'c']: 0.5555555555555556
-2025-04-24 16:28:35,558 [INFO] Evaluation results for pair 10: {'valid_samples': 9, 'variables': ['a', 'b', 'c'], 'mae': 0.5555555555555556}
-2025-04-24 16:28:35,559 [INFO] Saved results to ../output/results/metrics_results.json
-2025-04-24 16:28:35,560 [INFO] Saved code index to /Users/cuiziliang/Projects/formula_fitting_validation/output/generated_code/index.json
+2025-04-26 21:20:27,010 [INFO] Logging initialized
+2025-04-26 21:20:27,010 [INFO] 0微调qwen结果
+2025-04-26 21:20:27,011 [INFO] Loaded 52 items from /Users/cuiziliang/Projects/formula_fitting_validation/data/raw_llm/0微调qwen结果.jsonl
+2025-04-26 21:20:27,012 [INFO] Loaded prompt from ../data/prompt/prompt_with_raw.txt
+2025-04-26 21:20:27,032 [INFO] Initialized LLM: deepseek-chat
+2025-04-26 21:20:27,306 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:20:40,475 [INFO] Generated raw data
+2025-04-26 21:20:40,476 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:20:40,541 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:20:50,485 [INFO] Generated raw data
+2025-04-26 21:20:50,486 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:20:50,550 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:21:03,608 [INFO] Generated raw data
+2025-04-26 21:21:03,609 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:21:03,689 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:21:15,588 [INFO] Generated raw data
+2025-04-26 21:21:15,588 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:21:15,658 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:21:30,602 [INFO] Generated raw data
+2025-04-26 21:21:30,603 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:21:30,679 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:21:40,677 [INFO] Generated raw data
+2025-04-26 21:21:40,678 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:21:40,749 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:21:50,405 [INFO] Generated raw data
+2025-04-26 21:21:50,405 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:21:50,474 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:22:04,333 [INFO] Generated raw data
+2025-04-26 21:22:04,333 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:22:04,406 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:22:14,571 [INFO] Generated raw data
+2025-04-26 21:22:14,572 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:22:14,637 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:22:24,403 [INFO] Generated raw data
+2025-04-26 21:22:24,403 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:22:24,497 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:22:33,890 [INFO] Generated raw data
+2025-04-26 21:22:33,890 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:22:33,985 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:22:43,974 [INFO] Generated raw data
+2025-04-26 21:22:43,974 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:22:44,046 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:22:53,169 [INFO] Generated raw data
+2025-04-26 21:22:53,169 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:22:53,335 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:23:04,959 [INFO] Generated raw data
+2025-04-26 21:23:04,959 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:23:05,047 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:23:14,989 [INFO] Generated raw data
+2025-04-26 21:23:14,990 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:23:15,062 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:23:25,232 [INFO] Generated raw data
+2025-04-26 21:23:25,232 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:23:25,319 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:23:35,408 [INFO] Generated raw data
+2025-04-26 21:23:35,408 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:23:35,475 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:23:45,606 [INFO] Generated raw data
+2025-04-26 21:23:45,607 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:23:45,674 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:23:55,744 [INFO] Generated raw data
+2025-04-26 21:23:55,745 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:23:55,824 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:24:04,063 [INFO] Generated raw data
+2025-04-26 21:24:04,063 [ERROR] Failed to parse JSON: Expecting ',' delimiter: line 7 column 10 (char 100)
+2025-04-26 21:24:04,063 [ERROR] No raw_data block found
+2025-04-26 21:24:04,138 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:24:18,091 [INFO] Generated raw data
+2025-04-26 21:24:18,092 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:24:18,165 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:24:28,207 [INFO] Generated raw data
+2025-04-26 21:24:28,208 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:24:28,308 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:24:41,005 [INFO] Generated raw data
+2025-04-26 21:24:41,006 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:24:41,078 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:24:51,781 [INFO] Generated raw data
+2025-04-26 21:24:51,781 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:24:51,925 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:25:05,174 [INFO] Generated raw data
+2025-04-26 21:25:05,174 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:25:05,243 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:25:15,313 [INFO] Generated raw data
+2025-04-26 21:25:15,313 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:25:15,391 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:25:25,038 [INFO] Generated raw data
+2025-04-26 21:25:25,039 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:25:25,105 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:25:39,435 [INFO] Generated raw data
+2025-04-26 21:25:39,435 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:25:39,507 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:25:49,719 [INFO] Generated raw data
+2025-04-26 21:25:49,719 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:25:49,798 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:25:59,346 [INFO] Generated raw data
+2025-04-26 21:25:59,346 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:25:59,451 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:26:10,505 [INFO] Generated raw data
+2025-04-26 21:26:10,506 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:26:10,571 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:26:21,155 [INFO] Generated raw data
+2025-04-26 21:26:21,155 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:26:21,235 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:26:31,703 [INFO] Generated raw data
+2025-04-26 21:26:31,703 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:26:31,769 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:26:41,330 [INFO] Generated raw data
+2025-04-26 21:26:41,330 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:26:41,394 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:26:52,081 [INFO] Generated raw data
+2025-04-26 21:26:52,081 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:26:52,153 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:27:03,448 [INFO] Generated raw data
+2025-04-26 21:27:03,448 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:27:03,551 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:27:14,122 [INFO] Generated raw data
+2025-04-26 21:27:14,123 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:27:14,202 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:27:24,236 [INFO] Generated raw data
+2025-04-26 21:27:24,236 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:27:24,312 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:27:34,004 [INFO] Generated raw data
+2025-04-26 21:27:34,005 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:27:34,121 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:27:44,207 [INFO] Generated raw data
+2025-04-26 21:27:44,207 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:27:44,427 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:27:54,546 [INFO] Generated raw data
+2025-04-26 21:27:54,546 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:27:54,619 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:28:05,699 [INFO] Generated raw data
+2025-04-26 21:28:05,699 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:28:05,770 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:28:16,665 [INFO] Generated raw data
+2025-04-26 21:28:16,665 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:28:16,769 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:28:27,008 [INFO] Generated raw data
+2025-04-26 21:28:27,009 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:28:27,093 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:28:41,036 [INFO] Generated raw data
+2025-04-26 21:28:41,036 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:28:41,108 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:28:58,546 [INFO] Generated raw data
+2025-04-26 21:28:58,546 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:28:58,628 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:29:12,445 [INFO] Generated raw data
+2025-04-26 21:29:12,445 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:29:12,560 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:29:25,710 [INFO] Generated raw data
+2025-04-26 21:29:25,711 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:29:25,776 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:29:38,585 [INFO] Generated raw data
+2025-04-26 21:29:38,586 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:29:38,708 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:29:48,526 [INFO] Generated raw data
+2025-04-26 21:29:48,527 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:29:48,593 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:29:58,451 [INFO] Generated raw data
+2025-04-26 21:29:58,452 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:29:58,535 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:30:08,783 [INFO] Generated raw data
+2025-04-26 21:30:08,783 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:30:08,791 [INFO] Saved updated JSON to /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data/0微调qwen结果_with_data.json
+2025-04-26 21:36:05,385 [INFO] Logging initialized
+2025-04-26 21:36:05,385 [INFO] 0微调qwen结果
+2025-04-26 21:36:05,387 [INFO] Loaded 52 items from /Users/cuiziliang/Projects/formula_fitting_validation/data/raw_llm/0微调qwen结果.jsonl
+2025-04-26 21:36:05,387 [INFO] Loaded prompt from ../data/prompt/prompt_with_raw.txt
+2025-04-26 21:36:05,407 [INFO] Initialized LLM: deepseek-chat
+2025-04-26 21:36:05,594 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:36:19,799 [INFO] Generated raw data
+2025-04-26 21:36:19,799 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:36:19,803 [INFO] Saved updated JSON to /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data/0微调qwen结果_with_data.json
+2025-04-26 21:37:30,578 [INFO] Logging initialized
+2025-04-26 21:37:30,578 [INFO] 两轮微调0426的结果
+2025-04-26 21:37:30,580 [INFO] Loaded 52 items from /Users/cuiziliang/Projects/formula_fitting_validation/data/raw_llm/两轮微调0426的结果.jsonl
+2025-04-26 21:37:30,580 [INFO] Loaded prompt from ../data/prompt/prompt_with_raw.txt
+2025-04-26 21:37:30,594 [INFO] Initialized LLM: deepseek-chat
+2025-04-26 21:37:30,762 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:37:42,133 [INFO] Generated raw data
+2025-04-26 21:37:42,134 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:37:42,211 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:37:52,059 [INFO] Generated raw data
+2025-04-26 21:37:52,060 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:37:52,130 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:38:02,005 [INFO] Generated raw data
+2025-04-26 21:38:02,006 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:38:02,071 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:38:11,956 [INFO] Generated raw data
+2025-04-26 21:38:11,957 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:38:12,042 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:38:22,055 [INFO] Generated raw data
+2025-04-26 21:38:22,056 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:38:22,124 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:38:32,099 [INFO] Generated raw data
+2025-04-26 21:38:32,100 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:38:32,166 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:38:42,134 [INFO] Generated raw data
+2025-04-26 21:38:42,135 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:38:42,216 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:38:52,418 [INFO] Generated raw data
+2025-04-26 21:38:52,419 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:38:52,483 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:39:03,227 [INFO] Generated raw data
+2025-04-26 21:39:03,228 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:39:03,295 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:39:13,326 [INFO] Generated raw data
+2025-04-26 21:39:13,327 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:39:13,394 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:39:23,299 [INFO] Generated raw data
+2025-04-26 21:39:23,300 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:39:23,374 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:39:33,438 [INFO] Generated raw data
+2025-04-26 21:39:33,438 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:39:33,505 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:39:43,061 [INFO] Generated raw data
+2025-04-26 21:39:43,061 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:39:43,128 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:39:52,790 [INFO] Generated raw data
+2025-04-26 21:39:52,790 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:39:52,854 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:40:02,825 [INFO] Generated raw data
+2025-04-26 21:40:02,825 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:40:02,895 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:40:13,174 [INFO] Generated raw data
+2025-04-26 21:40:13,175 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:40:13,278 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:40:23,115 [INFO] Generated raw data
+2025-04-26 21:40:23,115 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:40:23,223 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:40:33,107 [INFO] Generated raw data
+2025-04-26 21:40:33,108 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:40:33,198 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:40:42,972 [INFO] Generated raw data
+2025-04-26 21:40:42,974 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:40:43,040 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:40:53,822 [INFO] Generated raw data
+2025-04-26 21:40:53,823 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:40:53,888 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:41:03,860 [INFO] Generated raw data
+2025-04-26 21:41:03,860 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:41:03,922 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:41:15,766 [INFO] Generated raw data
+2025-04-26 21:41:15,767 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:41:15,828 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:41:25,874 [INFO] Generated raw data
+2025-04-26 21:41:25,874 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:41:26,083 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:41:36,112 [INFO] Generated raw data
+2025-04-26 21:41:36,112 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:41:36,182 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:41:45,946 [INFO] Generated raw data
+2025-04-26 21:41:45,946 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:41:46,021 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:41:55,966 [INFO] Generated raw data
+2025-04-26 21:41:55,967 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:41:56,040 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:42:06,937 [INFO] Generated raw data
+2025-04-26 21:42:06,938 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:42:07,005 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:42:16,970 [INFO] Generated raw data
+2025-04-26 21:42:16,970 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:42:17,032 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:42:28,281 [INFO] Generated raw data
+2025-04-26 21:42:28,281 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:42:28,386 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:42:37,862 [INFO] Generated raw data
+2025-04-26 21:42:37,862 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:42:37,934 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:42:48,311 [INFO] Generated raw data
+2025-04-26 21:42:48,312 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:42:48,389 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:42:58,238 [INFO] Generated raw data
+2025-04-26 21:42:58,238 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:42:58,315 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:43:07,867 [INFO] Generated raw data
+2025-04-26 21:43:07,868 [ERROR] Failed to parse JSON: Expecting ',' delimiter: line 7 column 10 (char 100)
+2025-04-26 21:43:07,868 [ERROR] No raw_data block found
+2025-04-26 21:43:07,938 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:43:18,312 [INFO] Generated raw data
+2025-04-26 21:43:18,312 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:43:18,427 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:43:28,859 [INFO] Generated raw data
+2025-04-26 21:43:28,859 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:43:28,937 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:43:40,123 [INFO] Generated raw data
+2025-04-26 21:43:40,124 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:43:40,210 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:43:50,261 [INFO] Generated raw data
+2025-04-26 21:43:50,262 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:43:50,344 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:44:00,194 [INFO] Generated raw data
+2025-04-26 21:44:00,195 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:44:00,259 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:44:11,576 [INFO] Generated raw data
+2025-04-26 21:44:11,577 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:44:11,645 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:44:21,595 [INFO] Generated raw data
+2025-04-26 21:44:21,596 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:44:21,683 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:44:31,117 [INFO] Generated raw data
+2025-04-26 21:44:31,117 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:44:31,229 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:44:41,461 [INFO] Generated raw data
+2025-04-26 21:44:41,461 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:44:41,533 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:44:51,394 [INFO] Generated raw data
+2025-04-26 21:44:51,395 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:44:51,466 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:45:01,839 [INFO] Generated raw data
+2025-04-26 21:45:01,840 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:45:01,944 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:45:11,811 [INFO] Generated raw data
+2025-04-26 21:45:11,811 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:45:11,886 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:45:24,092 [INFO] Generated raw data
+2025-04-26 21:45:24,092 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:45:24,212 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:45:33,882 [INFO] Generated raw data
+2025-04-26 21:45:33,882 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:45:33,946 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:45:43,926 [INFO] Generated raw data
+2025-04-26 21:45:43,926 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:45:43,991 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:45:54,474 [INFO] Generated raw data
+2025-04-26 21:45:54,475 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:45:54,542 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:46:04,305 [INFO] Generated raw data
+2025-04-26 21:46:04,305 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:46:04,379 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:46:14,396 [INFO] Generated raw data
+2025-04-26 21:46:14,396 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:46:14,474 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:46:26,278 [INFO] Generated raw data
+2025-04-26 21:46:26,278 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 21:46:26,285 [INFO] Saved updated JSON to /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data/两轮微调0426的结果_with_data.json
+2025-04-26 21:50:27,336 [INFO] Logging initialized
+2025-04-26 21:50:27,337 [INFO] 0微调qwen结果_with_data
+2025-04-26 21:50:27,337 [INFO] Loaded 52 datasets from /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data/0微调qwen结果_with_data.json
+2025-04-26 21:50:27,338 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-26 21:50:27,360 [INFO] Initialized LLM: deepseek-chat
+2025-04-26 21:50:27,545 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:50:32,094 [INFO] Generated code
+2025-04-26 21:50:32,095 [INFO] Extracted Python code block
+2025-04-26 21:50:32,163 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:50:37,603 [INFO] Generated code
+2025-04-26 21:50:37,604 [INFO] Extracted Python code block
+2025-04-26 21:50:37,674 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:50:42,026 [INFO] Generated code
+2025-04-26 21:50:42,026 [INFO] Extracted Python code block
+2025-04-26 21:50:42,093 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:50:47,437 [INFO] Generated code
+2025-04-26 21:50:47,437 [INFO] Extracted Python code block
+2025-04-26 21:50:47,505 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:50:52,799 [INFO] Generated code
+2025-04-26 21:50:52,800 [INFO] Extracted Python code block
+2025-04-26 21:50:52,874 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:50:59,017 [INFO] Generated code
+2025-04-26 21:50:59,018 [INFO] Extracted Python code block
+2025-04-26 21:50:59,083 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:03,934 [INFO] Generated code
+2025-04-26 21:51:03,935 [INFO] Extracted Python code block
+2025-04-26 21:51:04,000 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:09,054 [INFO] Generated code
+2025-04-26 21:51:09,055 [INFO] Extracted Python code block
+2025-04-26 21:51:09,148 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:14,177 [INFO] Generated code
+2025-04-26 21:51:14,177 [INFO] Extracted Python code block
+2025-04-26 21:51:14,244 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:19,593 [INFO] Generated code
+2025-04-26 21:51:19,593 [INFO] Extracted Python code block
+2025-04-26 21:51:19,672 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:24,415 [INFO] Generated code
+2025-04-26 21:51:24,415 [INFO] Extracted Python code block
+2025-04-26 21:51:24,506 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:37,458 [INFO] Generated code
+2025-04-26 21:51:37,458 [INFO] Extracted Python code block
+2025-04-26 21:51:37,527 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:43,241 [INFO] Generated code
+2025-04-26 21:51:43,242 [INFO] Extracted Python code block
+2025-04-26 21:51:43,327 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:48,067 [INFO] Generated code
+2025-04-26 21:51:48,067 [INFO] Extracted Python code block
+2025-04-26 21:51:48,145 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:53,391 [INFO] Generated code
+2025-04-26 21:51:53,391 [INFO] Extracted Python code block
+2025-04-26 21:51:53,468 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:51:58,043 [INFO] Generated code
+2025-04-26 21:51:58,043 [INFO] Extracted Python code block
+2025-04-26 21:51:58,127 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:03,786 [INFO] Generated code
+2025-04-26 21:52:03,787 [INFO] Extracted Python code block
+2025-04-26 21:52:03,852 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:09,092 [INFO] Generated code
+2025-04-26 21:52:09,092 [INFO] Extracted Python code block
+2025-04-26 21:52:09,253 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:13,668 [INFO] Generated code
+2025-04-26 21:52:13,668 [INFO] Extracted Python code block
+2025-04-26 21:52:13,825 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:18,584 [INFO] Generated code
+2025-04-26 21:52:18,584 [INFO] Extracted Python code block
+2025-04-26 21:52:18,653 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:24,009 [INFO] Generated code
+2025-04-26 21:52:24,010 [INFO] Extracted Python code block
+2025-04-26 21:52:24,086 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:28,620 [INFO] Generated code
+2025-04-26 21:52:28,620 [INFO] Extracted Python code block
+2025-04-26 21:52:28,707 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:33,840 [INFO] Generated code
+2025-04-26 21:52:33,840 [INFO] Extracted Python code block
+2025-04-26 21:52:33,921 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:40,197 [INFO] Generated code
+2025-04-26 21:52:40,197 [INFO] Extracted Python code block
+2025-04-26 21:52:40,270 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:45,309 [INFO] Generated code
+2025-04-26 21:52:45,310 [INFO] Extracted Python code block
+2025-04-26 21:52:45,374 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:52,008 [INFO] Generated code
+2025-04-26 21:52:52,008 [INFO] Extracted Python code block
+2025-04-26 21:52:52,078 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:52:56,881 [INFO] Generated code
+2025-04-26 21:52:56,882 [INFO] Extracted Python code block
+2025-04-26 21:52:56,971 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:02,001 [INFO] Generated code
+2025-04-26 21:53:02,002 [INFO] Extracted Python code block
+2025-04-26 21:53:02,066 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:07,019 [INFO] Generated code
+2025-04-26 21:53:07,019 [INFO] Extracted Python code block
+2025-04-26 21:53:07,102 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:12,139 [INFO] Generated code
+2025-04-26 21:53:12,139 [INFO] Extracted Python code block
+2025-04-26 21:53:12,227 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:18,581 [INFO] Generated code
+2025-04-26 21:53:18,581 [INFO] Extracted Python code block
+2025-04-26 21:53:18,653 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:23,917 [INFO] Generated code
+2025-04-26 21:53:23,918 [INFO] Extracted Python code block
+2025-04-26 21:53:24,015 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:30,429 [INFO] Generated code
+2025-04-26 21:53:30,429 [INFO] Extracted Python code block
+2025-04-26 21:53:30,500 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:34,930 [INFO] Generated code
+2025-04-26 21:53:34,930 [INFO] Extracted Python code block
+2025-04-26 21:53:34,998 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:39,948 [INFO] Generated code
+2025-04-26 21:53:39,948 [INFO] Extracted Python code block
+2025-04-26 21:53:40,016 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:45,317 [INFO] Generated code
+2025-04-26 21:53:45,318 [INFO] Extracted Python code block
+2025-04-26 21:53:45,380 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:50,263 [INFO] Generated code
+2025-04-26 21:53:50,263 [INFO] Extracted Python code block
+2025-04-26 21:53:50,346 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:53:55,250 [INFO] Generated code
+2025-04-26 21:53:55,251 [INFO] Extracted Python code block
+2025-04-26 21:53:55,318 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:00,063 [INFO] Generated code
+2025-04-26 21:54:00,063 [INFO] Extracted Python code block
+2025-04-26 21:54:00,144 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:05,380 [INFO] Generated code
+2025-04-26 21:54:05,381 [INFO] Extracted Python code block
+2025-04-26 21:54:05,464 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:12,172 [INFO] Generated code
+2025-04-26 21:54:12,173 [INFO] Extracted Python code block
+2025-04-26 21:54:12,274 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:17,780 [INFO] Generated code
+2025-04-26 21:54:17,780 [INFO] Extracted Python code block
+2025-04-26 21:54:17,851 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:22,460 [INFO] Generated code
+2025-04-26 21:54:22,460 [INFO] Extracted Python code block
+2025-04-26 21:54:22,536 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:27,813 [INFO] Generated code
+2025-04-26 21:54:27,813 [INFO] Extracted Python code block
+2025-04-26 21:54:27,880 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:34,933 [INFO] Generated code
+2025-04-26 21:54:34,934 [INFO] Extracted Python code block
+2025-04-26 21:54:35,005 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:39,488 [INFO] Generated code
+2025-04-26 21:54:39,488 [INFO] Extracted Python code block
+2025-04-26 21:54:39,556 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:44,404 [INFO] Generated code
+2025-04-26 21:54:44,404 [INFO] Extracted Python code block
+2025-04-26 21:54:44,469 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:49,112 [INFO] Generated code
+2025-04-26 21:54:49,112 [INFO] Extracted Python code block
+2025-04-26 21:54:49,181 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:53,619 [INFO] Generated code
+2025-04-26 21:54:53,619 [INFO] Extracted Python code block
+2025-04-26 21:54:53,706 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:54:58,938 [INFO] Generated code
+2025-04-26 21:54:58,938 [INFO] Extracted Python code block
+2025-04-26 21:54:59,029 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:55:05,012 [INFO] Generated code
+2025-04-26 21:55:05,012 [INFO] Extracted Python code block
+2025-04-26 21:55:05,131 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 21:55:10,578 [INFO] Generated code
+2025-04-26 21:55:10,578 [INFO] Extracted Python code block
+2025-04-26 21:55:10,585 [INFO] Saved updated JSON to /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data_code/0微调qwen结果_with_data_code.json
+2025-04-26 21:55:38,329 [INFO] Logging initialized
+2025-04-26 21:55:38,329 [INFO] 0微调qwen结果_with_data_code
+2025-04-26 21:55:38,330 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,330 [INFO] Evaluating pair 1 with variables: ['a', 'b']
+2025-04-26 21:55:38,330 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 6.1
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 61.0
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 1: {'mae': 6.1, 'ice': 61.0}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 2 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 7.2
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 72.0
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 2: {'mae': 7.2, 'ice': 72.0}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 3 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 9.6
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 96.0
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 3: {'mae': 9.6, 'ice': 96.0}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 4 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 7.665000000000001
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 76.65
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 4: {'mae': 7.665000000000001, 'ice': 76.65}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 5 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 29.2
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 292.0
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 5: {'mae': 29.2, 'ice': 292.0}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 6 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 13.4
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 134.0
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 6: {'mae': 13.4, 'ice': 134.0}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 7 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 7.537239999999999
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 75.37239999999998
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 7: {'mae': 7.537239999999999, 'ice': 75.37239999999998}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 8 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,331 [INFO] Computed MAE for variables ['a', 'b']: 3.96586
+2025-04-26 21:55:38,331 [INFO] Computed ICE for variables ['a', 'b']: 39.6586
+2025-04-26 21:55:38,331 [INFO] Evaluation results for pair 8: {'mae': 3.96586, 'ice': 39.6586}
+2025-04-26 21:55:38,331 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Evaluating pair 9 with variables: ['a', 'b']
+2025-04-26 21:55:38,331 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 5.554800000000001
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 55.54800000000001
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 9: {'mae': 5.554800000000001, 'ice': 55.54800000000001}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 10 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 20.66
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 206.6
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 10: {'mae': 20.66, 'ice': 206.6}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 11 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 5.4
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 54.0
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 11: {'mae': 5.4, 'ice': 54.0}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 12 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 0.0
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 0.0
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 12: {'mae': 0.0, 'ice': 0.0}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 13 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 5.05412
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 50.5412
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 13: {'mae': 5.05412, 'ice': 50.5412}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 14 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 2.2
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 22.0
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 14: {'mae': 2.2, 'ice': 22.0}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 15 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 11.0
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 110.0
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 15: {'mae': 11.0, 'ice': 110.0}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 16 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 33.4
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 334.0
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 16: {'mae': 33.4, 'ice': 334.0}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 17 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 3.4
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 34.0
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 17: {'mae': 3.4, 'ice': 34.0}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 18 with variables: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,332 [INFO] Computed MAE for variables ['a', 'b']: 2.8
+2025-04-26 21:55:38,332 [INFO] Computed ICE for variables ['a', 'b']: 28.0
+2025-04-26 21:55:38,332 [INFO] Evaluation results for pair 18: {'mae': 2.8, 'ice': 28.0}
+2025-04-26 21:55:38,332 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,332 [INFO] Evaluating pair 19 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 21.4
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 214.0
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 19: {'mae': 21.4, 'ice': 214.0}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 20 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 9.433333333333335
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 94.33333333333336
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 20: {'mae': 9.433333333333335, 'ice': 94.33333333333336}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 21 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 8.3536
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 83.536
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 21: {'mae': 8.3536, 'ice': 83.536}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 22 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 22: {'mae': 4.4, 'ice': 44.0}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 23 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 1.6
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 16.0
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 23: {'mae': 1.6, 'ice': 16.0}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 24 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 5.55
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 55.5
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 24: {'mae': 5.55, 'ice': 55.5}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 25 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 71.2
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 712.0
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 25: {'mae': 71.2, 'ice': 712.0}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 26 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 5.899999999999999
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 58.999999999999986
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 26: {'mae': 5.899999999999999, 'ice': 58.999999999999986}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 27 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 6.166666666666667
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 61.66666666666667
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 27: {'mae': 6.166666666666667, 'ice': 61.66666666666667}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 28 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 9.238095238095239
+2025-04-26 21:55:38,333 [INFO] Computed ICE for variables ['a', 'b']: 92.3809523809524
+2025-04-26 21:55:38,333 [INFO] Evaluation results for pair 28: {'mae': 9.238095238095239, 'ice': 92.3809523809524}
+2025-04-26 21:55:38,333 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Evaluating pair 29 with variables: ['a', 'b']
+2025-04-26 21:55:38,333 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,333 [INFO] Computed MAE for variables ['a', 'b']: 11.3
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 113.0
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 29: {'mae': 11.3, 'ice': 113.0}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 30 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 4.6
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 46.0
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 30: {'mae': 4.6, 'ice': 46.0}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 31 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 3.4
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 34.0
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 31: {'mae': 3.4, 'ice': 34.0}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 32 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 6.640000000000001
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 66.4
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 32: {'mae': 6.640000000000001, 'ice': 66.4}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 33 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 4.8
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 48.0
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 33: {'mae': 4.8, 'ice': 48.0}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 34 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 3.8000000000000007
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 38.00000000000001
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 34: {'mae': 3.8000000000000007, 'ice': 38.00000000000001}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 35 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 3.333333333333333
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 33.33333333333333
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 35: {'mae': 3.333333333333333, 'ice': 33.33333333333333}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 36 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 20.314285714285713
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 203.14285714285714
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 36: {'mae': 20.314285714285713, 'ice': 203.14285714285714}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 37 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 34.1
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 341.0
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 37: {'mae': 34.1, 'ice': 341.0}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 38 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 20.8
+2025-04-26 21:55:38,334 [INFO] Computed ICE for variables ['a', 'b']: 208.0
+2025-04-26 21:55:38,334 [INFO] Evaluation results for pair 38: {'mae': 20.8, 'ice': 208.0}
+2025-04-26 21:55:38,334 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Evaluating pair 39 with variables: ['a', 'b']
+2025-04-26 21:55:38,334 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,334 [INFO] Computed MAE for variables ['a', 'b']: 25.119999999999997
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 251.2
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 39: {'mae': 25.119999999999997, 'ice': 251.2}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 40 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 6.342857142857143
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 63.42857142857143
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 40: {'mae': 6.342857142857143, 'ice': 63.42857142857143}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 41 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 30.3
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 303.0
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 41: {'mae': 30.3, 'ice': 303.0}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 42 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 13.715
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 137.15
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 42: {'mae': 13.715, 'ice': 137.15}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 43 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 13824678.462972943
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 138246784.62972942
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 43: {'mae': 13824678.462972943, 'ice': 138246784.62972942}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 44 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 4.28
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 42.800000000000004
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 44: {'mae': 4.28, 'ice': 42.800000000000004}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 45 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 4.6
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 46.0
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 45: {'mae': 4.6, 'ice': 46.0}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 46 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 12.0
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 120.0
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 46: {'mae': 12.0, 'ice': 120.0}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 47 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 3.1
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 31.0
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 47: {'mae': 3.1, 'ice': 31.0}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 48 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 12.412698412698413
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 124.12698412698413
+2025-04-26 21:55:38,335 [INFO] Evaluation results for pair 48: {'mae': 12.412698412698413, 'ice': 124.12698412698413}
+2025-04-26 21:55:38,335 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Evaluating pair 49 with variables: ['a', 'b']
+2025-04-26 21:55:38,335 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,335 [INFO] Computed MAE for variables ['a', 'b']: 11.2
+2025-04-26 21:55:38,335 [INFO] Computed ICE for variables ['a', 'b']: 112.0
+2025-04-26 21:55:38,336 [INFO] Evaluation results for pair 49: {'mae': 11.2, 'ice': 112.0}
+2025-04-26 21:55:38,336 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,336 [INFO] Evaluating pair 50 with variables: ['a', 'b']
+2025-04-26 21:55:38,336 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,336 [INFO] Computed MAE for variables ['a', 'b']: 63.0
+2025-04-26 21:55:38,336 [INFO] Computed ICE for variables ['a', 'b']: 630.0
+2025-04-26 21:55:38,336 [INFO] Evaluation results for pair 50: {'mae': 63.0, 'ice': 630.0}
+2025-04-26 21:55:38,336 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,336 [INFO] Evaluating pair 51 with variables: ['a', 'b']
+2025-04-26 21:55:38,336 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,336 [INFO] Computed MAE for variables ['a', 'b']: 23.766666666666666
+2025-04-26 21:55:38,336 [INFO] Computed ICE for variables ['a', 'b']: 237.66666666666666
+2025-04-26 21:55:38,336 [INFO] Evaluation results for pair 51: {'mae': 23.766666666666666, 'ice': 237.66666666666666}
+2025-04-26 21:55:38,336 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 21:55:38,336 [INFO] Evaluating pair 52 with variables: ['a', 'b']
+2025-04-26 21:55:38,336 [INFO] Defined calculate_value function
+2025-04-26 21:55:38,336 [INFO] Computed MAE for variables ['a', 'b']: 6.26
+2025-04-26 21:55:38,336 [INFO] Computed ICE for variables ['a', 'b']: 62.599999999999994
+2025-04-26 21:55:38,336 [INFO] Evaluation results for pair 52: {'mae': 6.26, 'ice': 62.599999999999994}
+2025-04-26 21:55:38,336 [INFO] Saved results to /Users/cuiziliang/Projects/formula_fitting_validation/output/results/0微调qwen结果_with_data_code_results.json

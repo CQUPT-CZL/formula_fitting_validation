@@ -1,12 +1,14 @@
 
 paths:
-  input_data: data/llm_output/generated_predictions.jsonl
+  raw_llm: data/raw_llm/两轮微调0426的结果.jsonl
+  llm_with_data: data/llm_with_data/0微调qwen结果_with_data.json
+  llm_with_data_code: data/llm_with_data_code/0微调qwen结果_with_data_code.json
   generated_predictions: data/llm_output/pred_with_raw.jsonl
-  raw_data: data/raw_data/test.json
   prompt: ../data/prompt/prompt.txt
   prompt_raw: ../data/prompt/prompt_with_raw.txt
-  output_dir: output/
-  generated_code_dir: output/generated_code/
+  output_dir: output/results/
+  generated_data_dir: data/llm_with_data/
+  generated_code_dir: data/llm_with_data_code/
 model:
   type: deepseek-chat
   api_key: sk-07a5ae9fd7744216b6bf26209fd1b5cc

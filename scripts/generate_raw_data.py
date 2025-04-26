@@ -70,10 +70,13 @@ def main():
     setup_logging(config)
 
     # Load input JSONL
-    input_path = os.path.join(project_root, config['paths']['input_data'])
+    input_path = os.path.join(project_root, config['paths']['raw_llm'])
     if not os.path.exists(input_path):
         logging.error(f"Input JSONL not found at: {input_path}")
         raise FileNotFoundError(f"Input JSONL not found at: {input_path}")
+
+    file_name = os.path.splitext(os.path.basename(input_path))[0]
+    logging.info(file_name)
 
     data = load_jsonl(input_path)
 
@@ -83,7 +86,7 @@ def main():
     llm_interface = LLMInterface(config)
 
     # Generate code
-    code_dir = os.path.join(project_root, config['paths']['generated_code_dir'])
+    code_dir = os.path.join(project_root, config['paths']['generated_data_dir'])
     os.makedirs(code_dir, exist_ok=True)
 
     for idx, entry in enumerate(data):
@@ -96,9 +99,9 @@ def main():
 
 
     # Save updated JSON
-    output_path = os.path.join(project_root, config['paths']['generated_code_dir'], 'data_with_raw0426.json')
+    output_path = os.path.join(project_root, config['paths']['generated_data_dir'], file_name + '_with_data.json')
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f, indent=2, ensure_ascii=False)
     logging.info(f"Saved updated JSON to {output_path}")
 
 

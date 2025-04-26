@@ -75,15 +75,17 @@ def main():
 
     setup_logging(config)
 
-    # Load data with code
-    data_with_code_path = os.path.join(project_root, config['paths']['generated_code_dir'], 'data_with_code.json')
-    if not os.path.exists(data_with_code_path):
-        logging.error(f"Data with code not found at: {data_with_code_path}")
-        raise FileNotFoundError(f"Data with code not found at: {data_with_code_path}")
+    # input_path
+    input_path = os.path.join(project_root, config['paths']['llm_with_data_code'])
+    if not os.path.exists(input_path):
+        logging.error(f"Data not found at: {input_path}")
+        raise FileNotFoundError(f"Data not found at: {input_path}")
 
-    with open(data_with_code_path, 'r', encoding='utf-8') as f:
+    file_name = os.path.splitext(os.path.basename(input_path))[0]
+    logging.info(file_name)  # 输出: 两轮微调0426的结果
+
+    with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
-
 
     metrics = [MAE(), ICE()]
     metric_results = {metric.__class__.__name__.lower(): [] for metric in metrics}
@@ -109,10 +111,10 @@ def main():
                 metric_results[metric.__class__.__name__.lower()].append(None)
 
     # Save results
-    os.makedirs(os.path.join(project_root, config['paths']['output_dir'], 'results'), exist_ok=True)
-    results_path = os.path.join(project_root, config['paths']['output_dir'], 'results', 'metrics_results.json')
+    os.makedirs(os.path.join(project_root, config['paths']['output_dir']), exist_ok=True)
+    results_path = os.path.join(project_root, config['paths']['output_dir'], file_name + '_results.json')
     with open(results_path, 'w', encoding='utf-8') as f:
-        json.dump(metric_results, f, indent=2)
+        json.dump(metric_results, f, indent=2, ensure_ascii=False)
     logging.info(f"Saved results to {results_path}")
 
 if __name__ == "__main__":
