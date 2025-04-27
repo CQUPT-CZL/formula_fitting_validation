@@ -9,7 +9,7 @@ import json
 import logging
 from src.data.loader import parse_variable_names, validate_data, load_json
 from src.model.code_executor import safe_exec
-from src.metrics.point_metrics import MAE
+from src.metrics.point_metrics import MAE, RMSE, MSE
 from src.metrics.integral_metrics import ICE  # 确保导入 ICE
 from src.utils.my_logging import setup_logging
 from typing import List, Dict, Any, Optional
@@ -87,7 +87,7 @@ def main():
     with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    metrics = [MAE(), ICE()]
+    metrics = [MAE(), RMSE(), MSE()]
     metric_results = {metric.__class__.__name__.lower(): [] for metric in metrics}
 
     for idx, en in enumerate(data):
