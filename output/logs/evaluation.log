@@ -810,3 +810,1797 @@
 2025-04-26 21:55:38,336 [INFO] Computed ICE for variables ['a', 'b']: 62.599999999999994
 2025-04-26 21:55:38,336 [INFO] Evaluation results for pair 52: {'mae': 6.26, 'ice': 62.599999999999994}
 2025-04-26 21:55:38,336 [INFO] Saved results to /Users/cuiziliang/Projects/formula_fitting_validation/output/results/0微调qwen结果_with_data_code_results.json
+2025-04-26 22:38:21,684 [INFO] Logging initialized
+2025-04-26 22:38:21,684 [INFO] qwen_7b没微调的结果
+2025-04-26 22:38:21,685 [INFO] Loaded 52 items from /Users/cuiziliang/Projects/formula_fitting_validation/data/raw_llm/qwen_7b没微调的结果.jsonl
+2025-04-26 22:38:21,685 [INFO] Loaded prompt from ../data/prompt/prompt_with_raw.txt
+2025-04-26 22:38:21,705 [INFO] Initialized LLM: deepseek-chat
+2025-04-26 22:38:21,939 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:38:35,461 [INFO] Generated raw data
+2025-04-26 22:38:35,461 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:38:35,528 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:38:51,431 [INFO] Generated raw data
+2025-04-26 22:38:51,432 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:38:51,512 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:39:01,159 [INFO] Generated raw data
+2025-04-26 22:39:01,159 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:39:01,247 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:39:12,885 [INFO] Generated raw data
+2025-04-26 22:39:12,885 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:39:12,975 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:39:23,585 [INFO] Generated raw data
+2025-04-26 22:39:23,585 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:39:23,689 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:39:33,518 [INFO] Generated raw data
+2025-04-26 22:39:33,519 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:39:33,587 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:39:46,523 [INFO] Generated raw data
+2025-04-26 22:39:46,524 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:39:46,588 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:39:56,517 [INFO] Generated raw data
+2025-04-26 22:39:56,518 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:39:56,590 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:40:10,792 [INFO] Generated raw data
+2025-04-26 22:40:10,793 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:40:10,868 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:40:21,340 [INFO] Generated raw data
+2025-04-26 22:40:21,340 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:40:21,410 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:40:31,785 [INFO] Generated raw data
+2025-04-26 22:40:31,786 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:40:31,869 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:40:42,638 [INFO] Generated raw data
+2025-04-26 22:40:42,639 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:40:42,717 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:40:53,047 [INFO] Generated raw data
+2025-04-26 22:40:53,047 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:40:53,127 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:41:03,530 [INFO] Generated raw data
+2025-04-26 22:41:03,530 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:41:03,596 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:41:12,936 [INFO] Generated raw data
+2025-04-26 22:41:12,937 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:41:13,008 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:41:27,268 [INFO] Generated raw data
+2025-04-26 22:41:27,268 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:41:27,339 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:41:41,222 [INFO] Generated raw data
+2025-04-26 22:41:41,222 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:41:41,289 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:45:15,949 [INFO] Logging initialized
+2025-04-26 22:45:15,949 [INFO] qwen_7b没微调的结果
+2025-04-26 22:45:15,951 [INFO] Loaded 52 items from /Users/cuiziliang/Projects/formula_fitting_validation/data/raw_llm/qwen_7b没微调的结果.jsonl
+2025-04-26 22:45:15,951 [INFO] Loaded prompt from ../data/prompt/prompt_with_raw.txt
+2025-04-26 22:45:15,970 [INFO] Initialized LLM: deepseek-chat
+2025-04-26 22:45:16,452 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:45:26,750 [INFO] Generated raw data
+2025-04-26 22:45:26,751 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:45:26,841 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:45:37,981 [INFO] Generated raw data
+2025-04-26 22:45:37,981 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:45:38,115 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:45:48,244 [INFO] Generated raw data
+2025-04-26 22:45:48,244 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:45:48,371 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:45:58,741 [INFO] Generated raw data
+2025-04-26 22:45:58,741 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:45:58,848 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:46:12,350 [INFO] Generated raw data
+2025-04-26 22:46:12,350 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:46:12,509 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:46:22,772 [INFO] Generated raw data
+2025-04-26 22:46:22,773 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:46:22,874 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:46:37,090 [INFO] Generated raw data
+2025-04-26 22:46:37,091 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:46:37,217 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:46:47,074 [INFO] Generated raw data
+2025-04-26 22:46:47,075 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:46:47,166 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:47:01,974 [INFO] Generated raw data
+2025-04-26 22:47:01,974 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:47:02,109 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:47:11,803 [INFO] Generated raw data
+2025-04-26 22:47:11,803 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:47:11,919 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:47:22,555 [INFO] Generated raw data
+2025-04-26 22:47:22,555 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:47:22,721 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:47:32,999 [INFO] Generated raw data
+2025-04-26 22:47:33,000 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:47:33,106 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:47:43,508 [INFO] Generated raw data
+2025-04-26 22:47:43,508 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:47:43,645 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:47:54,155 [INFO] Generated raw data
+2025-04-26 22:47:54,156 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:47:54,262 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:48:04,643 [INFO] Generated raw data
+2025-04-26 22:48:04,643 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:48:04,736 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:48:18,774 [INFO] Generated raw data
+2025-04-26 22:48:18,774 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:48:18,865 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:48:29,217 [INFO] Generated raw data
+2025-04-26 22:48:29,219 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:48:29,318 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:48:39,355 [INFO] Generated raw data
+2025-04-26 22:48:39,355 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:48:39,487 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:48:51,644 [INFO] Generated raw data
+2025-04-26 22:48:51,645 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:48:51,733 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:49:02,740 [INFO] Generated raw data
+2025-04-26 22:49:02,740 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:49:02,836 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:49:13,267 [INFO] Generated raw data
+2025-04-26 22:49:13,267 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:49:13,387 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:49:23,914 [INFO] Generated raw data
+2025-04-26 22:49:23,915 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:49:24,028 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:49:34,651 [INFO] Generated raw data
+2025-04-26 22:49:34,652 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:49:34,773 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:49:49,084 [INFO] Generated raw data
+2025-04-26 22:49:49,084 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:49:49,189 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:50:03,376 [INFO] Generated raw data
+2025-04-26 22:50:03,378 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:50:03,503 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:50:14,590 [INFO] Generated raw data
+2025-04-26 22:50:14,591 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:50:14,706 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:50:28,719 [INFO] Generated raw data
+2025-04-26 22:50:28,719 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:50:28,871 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:50:43,460 [INFO] Generated raw data
+2025-04-26 22:50:43,461 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:50:43,589 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:50:57,597 [INFO] Generated raw data
+2025-04-26 22:50:57,597 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:50:57,748 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:51:08,041 [INFO] Generated raw data
+2025-04-26 22:51:08,041 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:51:08,236 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:51:18,856 [INFO] Generated raw data
+2025-04-26 22:51:18,857 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:51:18,969 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:51:29,311 [INFO] Generated raw data
+2025-04-26 22:51:29,311 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:51:29,422 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:51:39,084 [INFO] Generated raw data
+2025-04-26 22:51:39,084 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:51:39,216 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:51:49,209 [INFO] Generated raw data
+2025-04-26 22:51:49,209 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:51:49,319 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:52:04,873 [INFO] Generated raw data
+2025-04-26 22:52:04,874 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:52:04,992 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:52:15,318 [INFO] Generated raw data
+2025-04-26 22:52:15,318 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:52:15,446 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:52:29,759 [INFO] Generated raw data
+2025-04-26 22:52:29,759 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:52:29,883 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:52:40,818 [INFO] Generated raw data
+2025-04-26 22:52:40,818 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:52:40,970 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:52:51,095 [INFO] Generated raw data
+2025-04-26 22:52:51,096 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:52:51,215 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:53:05,745 [INFO] Generated raw data
+2025-04-26 22:53:05,745 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:53:05,864 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:53:15,839 [INFO] Generated raw data
+2025-04-26 22:53:15,839 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:53:15,970 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:53:26,589 [INFO] Generated raw data
+2025-04-26 22:53:26,590 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:53:26,740 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:53:41,029 [INFO] Generated raw data
+2025-04-26 22:53:41,030 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:53:41,122 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:53:52,423 [INFO] Generated raw data
+2025-04-26 22:53:52,424 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:53:52,516 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:54:06,525 [INFO] Generated raw data
+2025-04-26 22:54:06,526 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:54:06,655 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:54:19,428 [INFO] Generated raw data
+2025-04-26 22:54:19,429 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:54:19,526 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:54:33,725 [INFO] Generated raw data
+2025-04-26 22:54:33,726 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:54:33,991 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:54:46,770 [INFO] Generated raw data
+2025-04-26 22:54:46,771 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:54:46,905 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:55:01,452 [INFO] Generated raw data
+2025-04-26 22:55:01,452 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:55:01,575 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:55:12,584 [INFO] Generated raw data
+2025-04-26 22:55:12,584 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:55:12,697 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:55:20,870 [INFO] Generated raw data
+2025-04-26 22:55:20,870 [ERROR] Failed to parse JSON: Expecting ',' delimiter: line 7 column 10 (char 100)
+2025-04-26 22:55:20,870 [ERROR] No raw_data block found
+2025-04-26 22:55:21,052 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:55:31,623 [INFO] Generated raw data
+2025-04-26 22:55:31,623 [INFO] Successfully extracted and parsed JSON data
+2025-04-26 22:55:31,631 [INFO] Saved updated JSON to /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data/qwen_7b没微调的结果_with_data.json
+2025-04-26 22:56:48,473 [INFO] Logging initialized
+2025-04-26 22:56:48,473 [INFO] qwen_7b没微调的结果_with_data
+2025-04-26 22:56:48,475 [INFO] Loaded 52 datasets from /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data/qwen_7b没微调的结果_with_data.json
+2025-04-26 22:56:48,475 [INFO] Loaded prompt from ../data/prompt/prompt.txt
+2025-04-26 22:56:48,496 [INFO] Initialized LLM: deepseek-chat
+2025-04-26 22:56:48,843 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:56:53,348 [INFO] Generated code
+2025-04-26 22:56:53,349 [INFO] Extracted Python code block
+2025-04-26 22:56:53,444 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:56:58,252 [INFO] Generated code
+2025-04-26 22:56:58,253 [INFO] Extracted Python code block
+2025-04-26 22:56:58,367 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:03,167 [INFO] Generated code
+2025-04-26 22:57:03,168 [INFO] Extracted Python code block
+2025-04-26 22:57:03,286 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:09,486 [INFO] Generated code
+2025-04-26 22:57:09,486 [INFO] Extracted Python code block
+2025-04-26 22:57:09,751 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:14,841 [INFO] Generated code
+2025-04-26 22:57:14,841 [INFO] Extracted Python code block
+2025-04-26 22:57:14,961 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:19,756 [INFO] Generated code
+2025-04-26 22:57:19,757 [INFO] Extracted Python code block
+2025-04-26 22:57:19,879 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:24,673 [INFO] Generated code
+2025-04-26 22:57:24,674 [INFO] Extracted Python code block
+2025-04-26 22:57:24,791 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:31,123 [INFO] Generated code
+2025-04-26 22:57:31,123 [INFO] Extracted Python code block
+2025-04-26 22:57:31,221 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:36,651 [INFO] Generated code
+2025-04-26 22:57:36,651 [INFO] Extracted Python code block
+2025-04-26 22:57:36,767 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:41,460 [INFO] Generated code
+2025-04-26 22:57:41,461 [INFO] Extracted Python code block
+2025-04-26 22:57:41,538 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:46,419 [INFO] Generated code
+2025-04-26 22:57:46,419 [INFO] Extracted Python code block
+2025-04-26 22:57:46,537 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:57:56,312 [INFO] Generated code
+2025-04-26 22:57:56,312 [INFO] Extracted Python code block
+2025-04-26 22:57:56,457 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:00,920 [INFO] Generated code
+2025-04-26 22:58:00,920 [INFO] Extracted Python code block
+2025-04-26 22:58:01,061 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:07,680 [INFO] Generated code
+2025-04-26 22:58:07,680 [INFO] Extracted Python code block
+2025-04-26 22:58:07,795 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:12,595 [INFO] Generated code
+2025-04-26 22:58:12,596 [INFO] Extracted Python code block
+2025-04-26 22:58:12,732 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:16,943 [INFO] Generated code
+2025-04-26 22:58:16,944 [INFO] Extracted Python code block
+2025-04-26 22:58:17,025 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:22,118 [INFO] Generated code
+2025-04-26 22:58:22,119 [INFO] Extracted Python code block
+2025-04-26 22:58:22,227 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:28,876 [INFO] Generated code
+2025-04-26 22:58:28,877 [INFO] Extracted Python code block
+2025-04-26 22:58:29,044 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:34,047 [INFO] Generated code
+2025-04-26 22:58:34,048 [INFO] Extracted Python code block
+2025-04-26 22:58:34,145 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:39,320 [INFO] Generated code
+2025-04-26 22:58:39,321 [INFO] Extracted Python code block
+2025-04-26 22:58:39,440 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:45,158 [INFO] Generated code
+2025-04-26 22:58:45,158 [INFO] Extracted Python code block
+2025-04-26 22:58:45,287 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:50,075 [INFO] Generated code
+2025-04-26 22:58:50,075 [INFO] Extracted Python code block
+2025-04-26 22:58:50,166 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:58:55,028 [INFO] Generated code
+2025-04-26 22:58:55,028 [INFO] Extracted Python code block
+2025-04-26 22:58:55,145 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:02,362 [INFO] Generated code
+2025-04-26 22:59:02,363 [INFO] Extracted Python code block
+2025-04-26 22:59:02,507 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:07,893 [INFO] Generated code
+2025-04-26 22:59:07,893 [INFO] Extracted Python code block
+2025-04-26 22:59:08,009 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:12,758 [INFO] Generated code
+2025-04-26 22:59:12,758 [INFO] Extracted Python code block
+2025-04-26 22:59:12,893 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:17,413 [INFO] Generated code
+2025-04-26 22:59:17,414 [INFO] Extracted Python code block
+2025-04-26 22:59:17,528 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:22,327 [INFO] Generated code
+2025-04-26 22:59:22,328 [INFO] Extracted Python code block
+2025-04-26 22:59:22,445 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:27,246 [INFO] Generated code
+2025-04-26 22:59:27,247 [INFO] Extracted Python code block
+2025-04-26 22:59:27,344 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:32,160 [INFO] Generated code
+2025-04-26 22:59:32,160 [INFO] Extracted Python code block
+2025-04-26 22:59:32,268 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:39,367 [INFO] Generated code
+2025-04-26 22:59:39,367 [INFO] Extracted Python code block
+2025-04-26 22:59:39,465 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:44,757 [INFO] Generated code
+2025-04-26 22:59:44,757 [INFO] Extracted Python code block
+2025-04-26 22:59:44,893 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:49,671 [INFO] Generated code
+2025-04-26 22:59:49,671 [INFO] Extracted Python code block
+2025-04-26 22:59:49,803 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 22:59:56,429 [INFO] Generated code
+2025-04-26 22:59:56,429 [INFO] Extracted Python code block
+2025-04-26 22:59:56,556 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:01,652 [INFO] Generated code
+2025-04-26 23:00:01,652 [INFO] Extracted Python code block
+2025-04-26 23:00:01,788 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:10,867 [INFO] Generated code
+2025-04-26 23:00:10,868 [INFO] Extracted Python code block
+2025-04-26 23:00:10,969 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:16,396 [INFO] Generated code
+2025-04-26 23:00:16,397 [INFO] Extracted Python code block
+2025-04-26 23:00:16,523 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:21,729 [INFO] Generated code
+2025-04-26 23:00:21,729 [INFO] Extracted Python code block
+2025-04-26 23:00:21,865 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:26,842 [INFO] Generated code
+2025-04-26 23:00:26,842 [INFO] Extracted Python code block
+2025-04-26 23:00:26,991 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:32,374 [INFO] Generated code
+2025-04-26 23:00:32,375 [INFO] Extracted Python code block
+2025-04-26 23:00:32,477 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:38,183 [INFO] Generated code
+2025-04-26 23:00:38,183 [INFO] Extracted Python code block
+2025-04-26 23:00:38,515 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:43,769 [INFO] Generated code
+2025-04-26 23:00:43,770 [INFO] Extracted Python code block
+2025-04-26 23:00:43,913 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:48,471 [INFO] Generated code
+2025-04-26 23:00:48,472 [INFO] Extracted Python code block
+2025-04-26 23:00:48,573 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:53,740 [INFO] Generated code
+2025-04-26 23:00:53,740 [INFO] Extracted Python code block
+2025-04-26 23:00:53,850 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:00:58,793 [INFO] Generated code
+2025-04-26 23:00:58,793 [INFO] Extracted Python code block
+2025-04-26 23:00:58,943 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:01:04,320 [INFO] Generated code
+2025-04-26 23:01:04,320 [INFO] Extracted Python code block
+2025-04-26 23:01:04,410 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:01:08,723 [INFO] Generated code
+2025-04-26 23:01:08,723 [INFO] Extracted Python code block
+2025-04-26 23:01:08,849 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:01:15,379 [INFO] Generated code
+2025-04-26 23:01:15,380 [INFO] Extracted Python code block
+2025-04-26 23:01:15,580 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:01:20,910 [INFO] Generated code
+2025-04-26 23:01:20,910 [INFO] Extracted Python code block
+2025-04-26 23:01:21,053 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:01:25,469 [INFO] Generated code
+2025-04-26 23:01:25,469 [INFO] Extracted Python code block
+2025-04-26 23:01:25,553 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:01:31,045 [INFO] Generated code
+2025-04-26 23:01:31,046 [INFO] Extracted Python code block
+2025-04-26 23:01:31,186 [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-26 23:01:36,884 [INFO] Generated code
+2025-04-26 23:01:36,884 [INFO] Extracted Python code block
+2025-04-26 23:01:36,892 [INFO] Saved updated JSON to /Users/cuiziliang/Projects/formula_fitting_validation/data/llm_with_data_code/qwen_7b没微调的结果_with_data_code.json
+2025-04-26 23:02:12,198 [INFO] Logging initialized
+2025-04-26 23:02:12,198 [INFO] qwen_7b没微调的结果_with_data_code
+2025-04-26 23:02:12,199 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Evaluating pair 1 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,200 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,200 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Evaluating pair 2 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,200 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,200 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,200 [INFO] Evaluating pair 3 with variables: ['a', 'b']
+2025-04-26 23:02:12,200 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,200 [INFO] Computed MAE for variables ['a', 'b']: 2.0
+2025-04-26 23:02:12,200 [INFO] Computed ICE for variables ['a', 'b']: 20.0
+2025-04-26 23:02:12,200 [INFO] Evaluation results for pair 3: {'mae': 2.0, 'ice': 20.0}
+2025-04-26 23:02:12,200 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Evaluating pair 4 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,200 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,200 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Evaluating pair 5 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,200 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,200 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,200 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,200 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,200 [INFO] Evaluating pair 6 with variables: ['a', 'b']
+2025-04-26 23:02:12,200 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,200 [INFO] Computed MAE for variables ['a', 'b']: 1.6
+2025-04-26 23:02:12,201 [INFO] Computed ICE for variables ['a', 'b']: 16.0
+2025-04-26 23:02:12,201 [INFO] Evaluation results for pair 6: {'mae': 1.6, 'ice': 16.0}
+2025-04-26 23:02:12,201 [INFO] Parsed variable names: ['a', 'b', 'a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,201 [INFO] Evaluating pair 7 with variables: ['a', 'b', 'a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,201 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,201 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,201 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,201 [INFO] Evaluating pair 8 with variables: ['a', 'b']
+2025-04-26 23:02:12,201 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,201 [INFO] Computed MAE for variables ['a', 'b']: 0.8
+2025-04-26 23:02:12,201 [INFO] Computed ICE for variables ['a', 'b']: 8.0
+2025-04-26 23:02:12,201 [INFO] Evaluation results for pair 8: {'mae': 0.8, 'ice': 8.0}
+2025-04-26 23:02:12,201 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,201 [INFO] Evaluating pair 9 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,201 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,201 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,201 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,201 [INFO] Evaluating pair 10 with variables: ['a', 'b']
+2025-04-26 23:02:12,201 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,201 [INFO] Computed MAE for variables ['a', 'b']: 2.1399999999999992
+2025-04-26 23:02:12,201 [INFO] Computed ICE for variables ['a', 'b']: 21.39999999999999
+2025-04-26 23:02:12,201 [INFO] Evaluation results for pair 10: {'mae': 2.1399999999999992, 'ice': 21.39999999999999}
+2025-04-26 23:02:12,201 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,201 [INFO] Evaluating pair 11 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,201 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,201 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,201 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,201 [INFO] Evaluating pair 12 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,201 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,201 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,201 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,201 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,201 [INFO] Evaluating pair 13 with variables: ['a', 'b']
+2025-04-26 23:02:12,201 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-26 23:02:12,202 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-26 23:02:12,202 [INFO] Evaluation results for pair 13: {'mae': 4.4, 'ice': 44.0}
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 14 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,202 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 15 with variables: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-26 23:02:12,202 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-26 23:02:12,202 [INFO] Evaluation results for pair 15: {'mae': 4.4, 'ice': 44.0}
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 16 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,202 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 17 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,202 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,202 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 18 with variables: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [INFO] Computed MAE for variables ['a', 'b']: 1.36
+2025-04-26 23:02:12,202 [INFO] Computed ICE for variables ['a', 'b']: 13.600000000000001
+2025-04-26 23:02:12,202 [INFO] Evaluation results for pair 18: {'mae': 1.36, 'ice': 13.600000000000001}
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 19 with variables: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [INFO] Computed MAE for variables ['a', 'b']: 7.2
+2025-04-26 23:02:12,202 [INFO] Computed ICE for variables ['a', 'b']: 72.0
+2025-04-26 23:02:12,202 [INFO] Evaluation results for pair 19: {'mae': 7.2, 'ice': 72.0}
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 20 with variables: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,202 [INFO] Computed MAE for variables ['a', 'b']: 1.7666666666666673
+2025-04-26 23:02:12,202 [INFO] Computed ICE for variables ['a', 'b']: 17.66666666666667
+2025-04-26 23:02:12,202 [INFO] Evaluation results for pair 20: {'mae': 1.7666666666666673, 'ice': 17.66666666666667}
+2025-04-26 23:02:12,202 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,202 [INFO] Evaluating pair 21 with variables: ['a', 'b']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [INFO] Computed MAE for variables ['a', 'b']: 1.1200000000000003
+2025-04-26 23:02:12,203 [INFO] Computed ICE for variables ['a', 'b']: 11.200000000000003
+2025-04-26 23:02:12,203 [INFO] Evaluation results for pair 21: {'mae': 1.1200000000000003, 'ice': 11.200000000000003}
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 22 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 23 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 24 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 25 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 26 with variables: ['a', 'b']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [INFO] Computed MAE for variables ['a', 'b']: 3.8909090909090915
+2025-04-26 23:02:12,203 [INFO] Computed ICE for variables ['a', 'b']: 38.909090909090914
+2025-04-26 23:02:12,203 [INFO] Evaluation results for pair 26: {'mae': 3.8909090909090915, 'ice': 38.909090909090914}
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 27 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 28 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 29 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,203 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,203 [INFO] Evaluating pair 30 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,203 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,203 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,203 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 31 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 32 with variables: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [INFO] Computed MAE for variables ['a', 'b']: 9.6
+2025-04-26 23:02:12,204 [INFO] Computed ICE for variables ['a', 'b']: 96.0
+2025-04-26 23:02:12,204 [INFO] Evaluation results for pair 32: {'mae': 9.6, 'ice': 96.0}
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 33 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 34 with variables: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [INFO] Computed MAE for variables ['a', 'b']: 3.102
+2025-04-26 23:02:12,204 [INFO] Computed ICE for variables ['a', 'b']: 31.02
+2025-04-26 23:02:12,204 [INFO] Evaluation results for pair 34: {'mae': 3.102, 'ice': 31.02}
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 35 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 36 with variables: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [INFO] Computed MAE for variables ['a', 'b']: 8.0
+2025-04-26 23:02:12,204 [INFO] Computed ICE for variables ['a', 'b']: 80.0
+2025-04-26 23:02:12,204 [INFO] Evaluation results for pair 36: {'mae': 8.0, 'ice': 80.0}
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 37 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 38 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,204 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Evaluating pair 39 with variables: ['a', 'b']
+2025-04-26 23:02:12,204 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,204 [INFO] Computed MAE for variables ['a', 'b']: 5.5200000000000005
+2025-04-26 23:02:12,204 [INFO] Computed ICE for variables ['a', 'b']: 55.2
+2025-04-26 23:02:12,204 [INFO] Evaluation results for pair 39: {'mae': 5.5200000000000005, 'ice': 55.2}
+2025-04-26 23:02:12,204 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 40 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 41 with variables: ['a', 'b']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [INFO] Computed MAE for variables ['a', 'b']: 9.0
+2025-04-26 23:02:12,205 [INFO] Computed ICE for variables ['a', 'b']: 90.0
+2025-04-26 23:02:12,205 [INFO] Evaluation results for pair 41: {'mae': 9.0, 'ice': 90.0}
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 42 with variables: ['a', 'b']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [INFO] Computed MAE for variables ['a', 'b']: 4.725
+2025-04-26 23:02:12,205 [INFO] Computed ICE for variables ['a', 'b']: 47.25
+2025-04-26 23:02:12,205 [INFO] Evaluation results for pair 42: {'mae': 4.725, 'ice': 47.25}
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 43 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 44 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 45 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 46 with variables: ['a', 'b']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [INFO] Computed MAE for variables ['a', 'b']: 11.0
+2025-04-26 23:02:12,205 [INFO] Computed ICE for variables ['a', 'b']: 110.0
+2025-04-26 23:02:12,205 [INFO] Evaluation results for pair 46: {'mae': 11.0, 'ice': 110.0}
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 47 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 48 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,205 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,205 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Evaluating pair 49 with variables: ['变量a', '变量b', '预测值 a + b', '实际结果', '偏差']
+2025-04-26 23:02:12,205 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,205 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,206 [INFO] Parsed variable names: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,206 [INFO] Evaluating pair 50 with variables: ['变量a', '变量b', '实际结果']
+2025-04-26 23:02:12,206 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,206 [WARNING] Sample 1 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 2 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 3 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 4 missing required keys
+2025-04-26 23:02:12,206 [WARNING] Sample 5 missing required keys
+2025-04-26 23:02:12,206 [INFO] Evaluating pair 51 with variables: []
+2025-04-26 23:02:12,206 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,206 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:02:12,206 [INFO] Evaluating pair 52 with variables: ['a', 'b']
+2025-04-26 23:02:12,206 [INFO] Defined calculate_value function
+2025-04-26 23:02:12,206 [INFO] Computed MAE for variables ['a', 'b']: 4.224802938337656
+2025-04-26 23:02:12,206 [INFO] Computed ICE for variables ['a', 'b']: 42.24802938337656
+2025-04-26 23:02:12,206 [INFO] Evaluation results for pair 52: {'mae': 4.224802938337656, 'ice': 42.24802938337656}
+2025-04-26 23:02:12,206 [INFO] Saved results to /Users/cuiziliang/Projects/formula_fitting_validation/output/results/qwen_7b没微调的结果_with_data_code_results.json
+2025-04-26 23:05:07,586 [INFO] Logging initialized
+2025-04-26 23:05:07,586 [INFO] qwen_7b没微调的结果_with_data_code
+2025-04-26 23:05:07,587 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,587 [INFO] Evaluating pair 1 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,587 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,587 [INFO] Evaluating pair 2 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,587 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,587 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,587 [INFO] Evaluating pair 3 with variables: ['a', 'b']
+2025-04-26 23:05:07,587 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,587 [INFO] Computed MAE for variables ['a', 'b']: 2.0
+2025-04-26 23:05:07,587 [INFO] Computed ICE for variables ['a', 'b']: 20.0
+2025-04-26 23:05:07,587 [INFO] Evaluation results for pair 3: {'mae': 2.0, 'ice': 20.0}
+2025-04-26 23:05:07,587 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 4 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 5 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 6 with variables: ['a', 'b']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [INFO] Computed MAE for variables ['a', 'b']: 1.6
+2025-04-26 23:05:07,588 [INFO] Computed ICE for variables ['a', 'b']: 16.0
+2025-04-26 23:05:07,588 [INFO] Evaluation results for pair 6: {'mae': 1.6, 'ice': 16.0}
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['a', 'b', 'a + b', '偏差']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 7 with variables: ['a', 'b', 'a + b', '偏差']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 8 with variables: ['a', 'b']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [INFO] Computed MAE for variables ['a', 'b']: 0.8
+2025-04-26 23:05:07,588 [INFO] Computed ICE for variables ['a', 'b']: 8.0
+2025-04-26 23:05:07,588 [INFO] Evaluation results for pair 8: {'mae': 0.8, 'ice': 8.0}
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 9 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 10 with variables: ['a', 'b']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [INFO] Computed MAE for variables ['a', 'b']: 2.1399999999999992
+2025-04-26 23:05:07,588 [INFO] Computed ICE for variables ['a', 'b']: 21.39999999999999
+2025-04-26 23:05:07,588 [INFO] Evaluation results for pair 10: {'mae': 2.1399999999999992, 'ice': 21.39999999999999}
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 11 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Evaluating pair 12 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,588 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,588 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 13 with variables: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-26 23:05:07,589 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-26 23:05:07,589 [INFO] Evaluation results for pair 13: {'mae': 4.4, 'ice': 44.0}
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 14 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 15 with variables: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-26 23:05:07,589 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-26 23:05:07,589 [INFO] Evaluation results for pair 15: {'mae': 4.4, 'ice': 44.0}
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 16 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 17 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 18 with variables: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [INFO] Computed MAE for variables ['a', 'b']: 1.36
+2025-04-26 23:05:07,589 [INFO] Computed ICE for variables ['a', 'b']: 13.600000000000001
+2025-04-26 23:05:07,589 [INFO] Evaluation results for pair 18: {'mae': 1.36, 'ice': 13.600000000000001}
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 19 with variables: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [INFO] Computed MAE for variables ['a', 'b']: 7.2
+2025-04-26 23:05:07,589 [INFO] Computed ICE for variables ['a', 'b']: 72.0
+2025-04-26 23:05:07,589 [INFO] Evaluation results for pair 19: {'mae': 7.2, 'ice': 72.0}
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 20 with variables: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [INFO] Computed MAE for variables ['a', 'b']: 1.7666666666666673
+2025-04-26 23:05:07,589 [INFO] Computed ICE for variables ['a', 'b']: 17.66666666666667
+2025-04-26 23:05:07,589 [INFO] Evaluation results for pair 20: {'mae': 1.7666666666666673, 'ice': 17.66666666666667}
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Evaluating pair 21 with variables: ['a', 'b']
+2025-04-26 23:05:07,589 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,589 [INFO] Computed MAE for variables ['a', 'b']: 1.1200000000000003
+2025-04-26 23:05:07,589 [INFO] Computed ICE for variables ['a', 'b']: 11.200000000000003
+2025-04-26 23:05:07,589 [INFO] Evaluation results for pair 21: {'mae': 1.1200000000000003, 'ice': 11.200000000000003}
+2025-04-26 23:05:07,589 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 22 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 23 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 24 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 25 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 26 with variables: ['a', 'b']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [INFO] Computed MAE for variables ['a', 'b']: 3.8909090909090915
+2025-04-26 23:05:07,590 [INFO] Computed ICE for variables ['a', 'b']: 38.909090909090914
+2025-04-26 23:05:07,590 [INFO] Evaluation results for pair 26: {'mae': 3.8909090909090915, 'ice': 38.909090909090914}
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 27 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 28 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 29 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 30 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 31 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,590 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,590 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,590 [INFO] Evaluating pair 32 with variables: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [INFO] Computed MAE for variables ['a', 'b']: 9.6
+2025-04-26 23:05:07,591 [INFO] Computed ICE for variables ['a', 'b']: 96.0
+2025-04-26 23:05:07,591 [INFO] Evaluation results for pair 32: {'mae': 9.6, 'ice': 96.0}
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 33 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 34 with variables: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [INFO] Computed MAE for variables ['a', 'b']: 3.102
+2025-04-26 23:05:07,591 [INFO] Computed ICE for variables ['a', 'b']: 31.02
+2025-04-26 23:05:07,591 [INFO] Evaluation results for pair 34: {'mae': 3.102, 'ice': 31.02}
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 35 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 36 with variables: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [INFO] Computed MAE for variables ['a', 'b']: 8.0
+2025-04-26 23:05:07,591 [INFO] Computed ICE for variables ['a', 'b']: 80.0
+2025-04-26 23:05:07,591 [INFO] Evaluation results for pair 36: {'mae': 8.0, 'ice': 80.0}
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 37 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 38 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 39 with variables: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [INFO] Computed MAE for variables ['a', 'b']: 5.5200000000000005
+2025-04-26 23:05:07,591 [INFO] Computed ICE for variables ['a', 'b']: 55.2
+2025-04-26 23:05:07,591 [INFO] Evaluation results for pair 39: {'mae': 5.5200000000000005, 'ice': 55.2}
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 40 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 41 with variables: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,591 [INFO] Computed MAE for variables ['a', 'b']: 9.0
+2025-04-26 23:05:07,591 [INFO] Computed ICE for variables ['a', 'b']: 90.0
+2025-04-26 23:05:07,591 [INFO] Evaluation results for pair 41: {'mae': 9.0, 'ice': 90.0}
+2025-04-26 23:05:07,591 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Evaluating pair 42 with variables: ['a', 'b']
+2025-04-26 23:05:07,591 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [INFO] Computed MAE for variables ['a', 'b']: 4.725
+2025-04-26 23:05:07,592 [INFO] Computed ICE for variables ['a', 'b']: 47.25
+2025-04-26 23:05:07,592 [INFO] Evaluation results for pair 42: {'mae': 4.725, 'ice': 47.25}
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 43 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 44 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 45 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 46 with variables: ['a', 'b']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [INFO] Computed MAE for variables ['a', 'b']: 11.0
+2025-04-26 23:05:07,592 [INFO] Computed ICE for variables ['a', 'b']: 110.0
+2025-04-26 23:05:07,592 [INFO] Evaluation results for pair 46: {'mae': 11.0, 'ice': 110.0}
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 47 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 48 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 49 with variables: ['变量a', '变量b', '预测值 a + b', '偏差']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['变量a', '变量b']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 50 with variables: ['变量a', '变量b']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '变量a'
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 51 with variables: []
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:05:07,592 [INFO] Evaluating pair 52 with variables: ['a', 'b']
+2025-04-26 23:05:07,592 [INFO] Defined calculate_value function
+2025-04-26 23:05:07,592 [INFO] Computed MAE for variables ['a', 'b']: 4.224802938337656
+2025-04-26 23:05:07,592 [INFO] Computed ICE for variables ['a', 'b']: 42.24802938337656
+2025-04-26 23:05:07,592 [INFO] Evaluation results for pair 52: {'mae': 4.224802938337656, 'ice': 42.24802938337656}
+2025-04-26 23:05:07,593 [INFO] Saved results to /Users/cuiziliang/Projects/formula_fitting_validation/output/results/qwen_7b没微调的结果_with_data_code_results.json
+2025-04-26 23:06:04,125 [INFO] Logging initialized
+2025-04-26 23:06:04,125 [INFO] qwen_7b没微调的结果_with_data_code
+2025-04-26 23:06:04,126 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,126 [INFO] Evaluating pair 1 with variables: ['a', 'b']
+2025-04-26 23:06:04,126 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,126 [INFO] Computed MAE for variables ['a', 'b']: 6.8
+2025-04-26 23:06:04,126 [INFO] Computed ICE for variables ['a', 'b']: 68.0
+2025-04-26 23:06:04,126 [INFO] Evaluation results for pair 1: {'mae': 6.8, 'ice': 68.0}
+2025-04-26 23:06:04,126 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,126 [INFO] Evaluating pair 2 with variables: ['a', 'b']
+2025-04-26 23:06:04,126 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,126 [INFO] Computed MAE for variables ['a', 'b']: 49.2
+2025-04-26 23:06:04,126 [INFO] Computed ICE for variables ['a', 'b']: 492.0
+2025-04-26 23:06:04,126 [INFO] Evaluation results for pair 2: {'mae': 49.2, 'ice': 492.0}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 3 with variables: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [INFO] Computed MAE for variables ['a', 'b']: 2.0
+2025-04-26 23:06:04,127 [INFO] Computed ICE for variables ['a', 'b']: 20.0
+2025-04-26 23:06:04,127 [INFO] Evaluation results for pair 3: {'mae': 2.0, 'ice': 20.0}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 4 with variables: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [INFO] Computed MAE for variables ['a', 'b']: 3.0
+2025-04-26 23:06:04,127 [INFO] Computed ICE for variables ['a', 'b']: 30.0
+2025-04-26 23:06:04,127 [INFO] Evaluation results for pair 4: {'mae': 3.0, 'ice': 30.0}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 5 with variables: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [INFO] Computed MAE for variables ['a', 'b']: 5.2
+2025-04-26 23:06:04,127 [INFO] Computed ICE for variables ['a', 'b']: 52.0
+2025-04-26 23:06:04,127 [INFO] Evaluation results for pair 5: {'mae': 5.2, 'ice': 52.0}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 6 with variables: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [INFO] Computed MAE for variables ['a', 'b']: 1.6
+2025-04-26 23:06:04,127 [INFO] Computed ICE for variables ['a', 'b']: 16.0
+2025-04-26 23:06:04,127 [INFO] Evaluation results for pair 6: {'mae': 1.6, 'ice': 16.0}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b', 'a + b', '偏差']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 7 with variables: ['a', 'b', 'a + b', '偏差']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument 'a + b'
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 8 with variables: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [INFO] Computed MAE for variables ['a', 'b']: 0.8
+2025-04-26 23:06:04,127 [INFO] Computed ICE for variables ['a', 'b']: 8.0
+2025-04-26 23:06:04,127 [INFO] Evaluation results for pair 8: {'mae': 0.8, 'ice': 8.0}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 9 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,127 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 10 with variables: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [INFO] Computed MAE for variables ['a', 'b']: 2.1399999999999992
+2025-04-26 23:06:04,127 [INFO] Computed ICE for variables ['a', 'b']: 21.39999999999999
+2025-04-26 23:06:04,127 [INFO] Evaluation results for pair 10: {'mae': 2.1399999999999992, 'ice': 21.39999999999999}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 11 with variables: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,127 [INFO] Computed MAE for variables ['a', 'b']: 8.4
+2025-04-26 23:06:04,127 [INFO] Computed ICE for variables ['a', 'b']: 84.0
+2025-04-26 23:06:04,127 [INFO] Evaluation results for pair 11: {'mae': 8.4, 'ice': 84.0}
+2025-04-26 23:06:04,127 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,127 [INFO] Evaluating pair 12 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 7.4
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 74.0
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 12: {'mae': 7.4, 'ice': 74.0}
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 13 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 13: {'mae': 4.4, 'ice': 44.0}
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 14 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 1: calculate_value() missing 1 required positional argument: 'n'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 2: calculate_value() missing 1 required positional argument: 'n'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 3: calculate_value() missing 1 required positional argument: 'n'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 4: calculate_value() missing 1 required positional argument: 'n'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 5: calculate_value() missing 1 required positional argument: 'n'
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 15 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 15: {'mae': 4.4, 'ice': 44.0}
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 16 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,128 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 17 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 2.8
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 28.0
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 17: {'mae': 2.8, 'ice': 28.0}
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 18 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 1.36
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 13.600000000000001
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 18: {'mae': 1.36, 'ice': 13.600000000000001}
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 19 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 7.2
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 72.0
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 19: {'mae': 7.2, 'ice': 72.0}
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 20 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 1.7666666666666673
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 17.66666666666667
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 20: {'mae': 1.7666666666666673, 'ice': 17.66666666666667}
+2025-04-26 23:06:04,128 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Evaluating pair 21 with variables: ['a', 'b']
+2025-04-26 23:06:04,128 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,128 [INFO] Computed MAE for variables ['a', 'b']: 1.1200000000000003
+2025-04-26 23:06:04,128 [INFO] Computed ICE for variables ['a', 'b']: 11.200000000000003
+2025-04-26 23:06:04,128 [INFO] Evaluation results for pair 21: {'mae': 1.1200000000000003, 'ice': 11.200000000000003}
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 22 with variables: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [INFO] Computed MAE for variables ['a', 'b']: 2.88
+2025-04-26 23:06:04,129 [INFO] Computed ICE for variables ['a', 'b']: 28.799999999999997
+2025-04-26 23:06:04,129 [INFO] Evaluation results for pair 22: {'mae': 2.88, 'ice': 28.799999999999997}
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 23 with variables: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [INFO] Computed MAE for variables ['a', 'b']: 5.4
+2025-04-26 23:06:04,129 [INFO] Computed ICE for variables ['a', 'b']: 54.0
+2025-04-26 23:06:04,129 [INFO] Evaluation results for pair 23: {'mae': 5.4, 'ice': 54.0}
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 24 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 25 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 26 with variables: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [INFO] Computed MAE for variables ['a', 'b']: 3.8909090909090915
+2025-04-26 23:06:04,129 [INFO] Computed ICE for variables ['a', 'b']: 38.909090909090914
+2025-04-26 23:06:04,129 [INFO] Evaluation results for pair 26: {'mae': 3.8909090909090915, 'ice': 38.909090909090914}
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 27 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 28 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 29 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 30 with variables: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,129 [INFO] Computed MAE for variables ['a', 'b']: 3.8
+2025-04-26 23:06:04,129 [INFO] Computed ICE for variables ['a', 'b']: 38.0
+2025-04-26 23:06:04,129 [INFO] Evaluation results for pair 30: {'mae': 3.8, 'ice': 38.0}
+2025-04-26 23:06:04,129 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,129 [INFO] Evaluating pair 31 with variables: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [INFO] Computed MAE for variables ['a', 'b']: 3.813631660481456
+2025-04-26 23:06:04,130 [INFO] Computed ICE for variables ['a', 'b']: 38.13631660481456
+2025-04-26 23:06:04,130 [INFO] Evaluation results for pair 31: {'mae': 3.813631660481456, 'ice': 38.13631660481456}
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 32 with variables: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [INFO] Computed MAE for variables ['a', 'b']: 9.6
+2025-04-26 23:06:04,130 [INFO] Computed ICE for variables ['a', 'b']: 96.0
+2025-04-26 23:06:04,130 [INFO] Evaluation results for pair 32: {'mae': 9.6, 'ice': 96.0}
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 33 with variables: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [INFO] Computed MAE for variables ['a', 'b']: 13.8
+2025-04-26 23:06:04,130 [INFO] Computed ICE for variables ['a', 'b']: 138.0
+2025-04-26 23:06:04,130 [INFO] Evaluation results for pair 33: {'mae': 13.8, 'ice': 138.0}
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 34 with variables: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [INFO] Computed MAE for variables ['a', 'b']: 3.102
+2025-04-26 23:06:04,130 [INFO] Computed ICE for variables ['a', 'b']: 31.02
+2025-04-26 23:06:04,130 [INFO] Evaluation results for pair 34: {'mae': 3.102, 'ice': 31.02}
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 35 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 36 with variables: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [INFO] Computed MAE for variables ['a', 'b']: 8.0
+2025-04-26 23:06:04,130 [INFO] Computed ICE for variables ['a', 'b']: 80.0
+2025-04-26 23:06:04,130 [INFO] Evaluation results for pair 36: {'mae': 8.0, 'ice': 80.0}
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 37 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 38 with variables: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [INFO] Computed MAE for variables ['a', 'b']: 6.0
+2025-04-26 23:06:04,130 [INFO] Computed ICE for variables ['a', 'b']: 60.0
+2025-04-26 23:06:04,130 [INFO] Evaluation results for pair 38: {'mae': 6.0, 'ice': 60.0}
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 39 with variables: ['a', 'b']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [INFO] Computed MAE for variables ['a', 'b']: 5.5200000000000005
+2025-04-26 23:06:04,130 [INFO] Computed ICE for variables ['a', 'b']: 55.2
+2025-04-26 23:06:04,130 [INFO] Evaluation results for pair 39: {'mae': 5.5200000000000005, 'ice': 55.2}
+2025-04-26 23:06:04,130 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,130 [INFO] Evaluating pair 40 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,130 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,130 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument 'b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument 'b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument 'b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument 'b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument 'b'
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 41 with variables: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [INFO] Computed MAE for variables ['a', 'b']: 9.0
+2025-04-26 23:06:04,131 [INFO] Computed ICE for variables ['a', 'b']: 90.0
+2025-04-26 23:06:04,131 [INFO] Evaluation results for pair 41: {'mae': 9.0, 'ice': 90.0}
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 42 with variables: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [INFO] Computed MAE for variables ['a', 'b']: 4.725
+2025-04-26 23:06:04,131 [INFO] Computed ICE for variables ['a', 'b']: 47.25
+2025-04-26 23:06:04,131 [INFO] Evaluation results for pair 42: {'mae': 4.725, 'ice': 47.25}
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 43 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 44 with variables: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [INFO] Computed MAE for variables ['a', 'b']: 9.8
+2025-04-26 23:06:04,131 [INFO] Computed ICE for variables ['a', 'b']: 98.0
+2025-04-26 23:06:04,131 [INFO] Evaluation results for pair 44: {'mae': 9.8, 'ice': 98.0}
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 45 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 46 with variables: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [INFO] Computed MAE for variables ['a', 'b']: 11.0
+2025-04-26 23:06:04,131 [INFO] Computed ICE for variables ['a', 'b']: 110.0
+2025-04-26 23:06:04,131 [INFO] Evaluation results for pair 46: {'mae': 11.0, 'ice': 110.0}
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 47 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 48 with variables: ['a', 'b']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [INFO] Computed MAE for variables ['a', 'b']: 5.4
+2025-04-26 23:06:04,131 [INFO] Computed ICE for variables ['a', 'b']: 54.0
+2025-04-26 23:06:04,131 [INFO] Evaluation results for pair 48: {'mae': 5.4, 'ice': 54.0}
+2025-04-26 23:06:04,131 [INFO] Parsed variable names: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Evaluating pair 49 with variables: ['a', 'b', '预测值 a + b', '偏差']
+2025-04-26 23:06:04,131 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,131 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,132 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,132 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,132 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument '预测值 a + b'
+2025-04-26 23:06:04,132 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,132 [INFO] Evaluating pair 50 with variables: ['a', 'b']
+2025-04-26 23:06:04,132 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,132 [INFO] Computed MAE for variables ['a', 'b']: 1.0
+2025-04-26 23:06:04,132 [INFO] Computed ICE for variables ['a', 'b']: 10.0
+2025-04-26 23:06:04,132 [INFO] Evaluation results for pair 50: {'mae': 1.0, 'ice': 10.0}
+2025-04-26 23:06:04,132 [INFO] Evaluating pair 51 with variables: []
+2025-04-26 23:06:04,132 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,132 [INFO] Parsed variable names: ['a', 'b']
+2025-04-26 23:06:04,132 [INFO] Evaluating pair 52 with variables: ['a', 'b']
+2025-04-26 23:06:04,132 [INFO] Defined calculate_value function
+2025-04-26 23:06:04,132 [INFO] Computed MAE for variables ['a', 'b']: 4.224802938337656
+2025-04-26 23:06:04,132 [INFO] Computed ICE for variables ['a', 'b']: 42.24802938337656
+2025-04-26 23:06:04,132 [INFO] Evaluation results for pair 52: {'mae': 4.224802938337656, 'ice': 42.24802938337656}
+2025-04-26 23:06:04,132 [INFO] Saved results to /Users/cuiziliang/Projects/formula_fitting_validation/output/results/qwen_7b没微调的结果_with_data_code_results.json
+2025-04-27 09:35:31,050 [INFO] Logging initialized
+2025-04-27 09:35:31,050 [INFO] qwen_7b没微调的结果_with_data_code
+2025-04-27 09:35:31,051 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,051 [INFO] Evaluating pair 1 with variables: ['a', 'b']
+2025-04-27 09:35:31,051 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,051 [INFO] Computed MAE for variables ['a', 'b']: 6.8
+2025-04-27 09:35:31,051 [INFO] Computed ICE for variables ['a', 'b']: 68.0
+2025-04-27 09:35:31,051 [INFO] Evaluation results for pair 1: {'mae': 6.8, 'ice': 68.0}
+2025-04-27 09:35:31,051 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,051 [INFO] Evaluating pair 2 with variables: ['a', 'b']
+2025-04-27 09:35:31,051 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,051 [INFO] Computed MAE for variables ['a', 'b']: 49.2
+2025-04-27 09:35:31,051 [INFO] Computed ICE for variables ['a', 'b']: 492.0
+2025-04-27 09:35:31,051 [INFO] Evaluation results for pair 2: {'mae': 49.2, 'ice': 492.0}
+2025-04-27 09:35:31,051 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,051 [INFO] Evaluating pair 3 with variables: ['a', 'b']
+2025-04-27 09:35:31,051 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,051 [INFO] Computed MAE for variables ['a', 'b']: 2.0
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 20.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 3: {'mae': 2.0, 'ice': 20.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 4 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 3.0
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 30.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 4: {'mae': 3.0, 'ice': 30.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 5 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 5.2
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 52.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 5: {'mae': 5.2, 'ice': 52.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 6 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 1.6
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 16.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 6: {'mae': 1.6, 'ice': 16.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 7 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 3.4
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 34.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 7: {'mae': 3.4, 'ice': 34.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 8 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 0.8
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 8.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 8: {'mae': 0.8, 'ice': 8.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 9 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 1.2
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 12.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 9: {'mae': 1.2, 'ice': 12.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 10 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 2.1399999999999992
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 21.39999999999999
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 10: {'mae': 2.1399999999999992, 'ice': 21.39999999999999}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 11 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 8.4
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 84.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 11: {'mae': 8.4, 'ice': 84.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 12 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,052 [INFO] Computed MAE for variables ['a', 'b']: 7.4
+2025-04-27 09:35:31,052 [INFO] Computed ICE for variables ['a', 'b']: 74.0
+2025-04-27 09:35:31,052 [INFO] Evaluation results for pair 12: {'mae': 7.4, 'ice': 74.0}
+2025-04-27 09:35:31,052 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Evaluating pair 13 with variables: ['a', 'b']
+2025-04-27 09:35:31,052 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 13: {'mae': 4.4, 'ice': 44.0}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 14 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [ERROR] Error evaluating sample 1: calculate_value() missing 1 required positional argument: 'n'
+2025-04-27 09:35:31,053 [ERROR] Error evaluating sample 2: calculate_value() missing 1 required positional argument: 'n'
+2025-04-27 09:35:31,053 [ERROR] Error evaluating sample 3: calculate_value() missing 1 required positional argument: 'n'
+2025-04-27 09:35:31,053 [ERROR] Error evaluating sample 4: calculate_value() missing 1 required positional argument: 'n'
+2025-04-27 09:35:31,053 [ERROR] Error evaluating sample 5: calculate_value() missing 1 required positional argument: 'n'
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 15 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 15: {'mae': 4.4, 'ice': 44.0}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 16 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 7.6
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 76.0
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 16: {'mae': 7.6, 'ice': 76.0}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 17 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 2.8
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 28.0
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 17: {'mae': 2.8, 'ice': 28.0}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 18 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 1.36
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 13.600000000000001
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 18: {'mae': 1.36, 'ice': 13.600000000000001}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 19 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 7.2
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 72.0
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 19: {'mae': 7.2, 'ice': 72.0}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 20 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 1.7666666666666673
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 17.66666666666667
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 20: {'mae': 1.7666666666666673, 'ice': 17.66666666666667}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 21 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 1.1200000000000003
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 11.200000000000003
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 21: {'mae': 1.1200000000000003, 'ice': 11.200000000000003}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 22 with variables: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,053 [INFO] Computed MAE for variables ['a', 'b']: 2.88
+2025-04-27 09:35:31,053 [INFO] Computed ICE for variables ['a', 'b']: 28.799999999999997
+2025-04-27 09:35:31,053 [INFO] Evaluation results for pair 22: {'mae': 2.88, 'ice': 28.799999999999997}
+2025-04-27 09:35:31,053 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,053 [INFO] Evaluating pair 23 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 5.4
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 54.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 23: {'mae': 5.4, 'ice': 54.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 24 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 5.4
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 54.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 24: {'mae': 5.4, 'ice': 54.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 25 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 11.4
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 114.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 25: {'mae': 11.4, 'ice': 114.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 26 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 3.8909090909090915
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 38.909090909090914
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 26: {'mae': 3.8909090909090915, 'ice': 38.909090909090914}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 27 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 1.8
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 18.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 27: {'mae': 1.8, 'ice': 18.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 28 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 2.4
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 24.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 28: {'mae': 2.4, 'ice': 24.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 29 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 4.6
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 46.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 29: {'mae': 4.6, 'ice': 46.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 30 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 3.8
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 38.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 30: {'mae': 3.8, 'ice': 38.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 31 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 3.813631660481456
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 38.13631660481456
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 31: {'mae': 3.813631660481456, 'ice': 38.13631660481456}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 32 with variables: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,054 [INFO] Computed MAE for variables ['a', 'b']: 9.6
+2025-04-27 09:35:31,054 [INFO] Computed ICE for variables ['a', 'b']: 96.0
+2025-04-27 09:35:31,054 [INFO] Evaluation results for pair 32: {'mae': 9.6, 'ice': 96.0}
+2025-04-27 09:35:31,054 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,054 [INFO] Evaluating pair 33 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 13.8
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 138.0
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 33: {'mae': 13.8, 'ice': 138.0}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 34 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 3.102
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 31.02
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 34: {'mae': 3.102, 'ice': 31.02}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 35 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 4.4
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 44.0
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 35: {'mae': 4.4, 'ice': 44.0}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 36 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 8.0
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 80.0
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 36: {'mae': 8.0, 'ice': 80.0}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 37 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 1.8
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 18.0
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 37: {'mae': 1.8, 'ice': 18.0}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 38 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 6.0
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 60.0
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 38: {'mae': 6.0, 'ice': 60.0}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 39 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 5.5200000000000005
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 55.2
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 39: {'mae': 5.5200000000000005, 'ice': 55.2}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 40 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [ERROR] Error evaluating sample 1: calculate_value() got an unexpected keyword argument 'b'
+2025-04-27 09:35:31,055 [ERROR] Error evaluating sample 2: calculate_value() got an unexpected keyword argument 'b'
+2025-04-27 09:35:31,055 [ERROR] Error evaluating sample 3: calculate_value() got an unexpected keyword argument 'b'
+2025-04-27 09:35:31,055 [ERROR] Error evaluating sample 4: calculate_value() got an unexpected keyword argument 'b'
+2025-04-27 09:35:31,055 [ERROR] Error evaluating sample 5: calculate_value() got an unexpected keyword argument 'b'
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 41 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 9.0
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 90.0
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 41: {'mae': 9.0, 'ice': 90.0}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 42 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 4.725
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 47.25
+2025-04-27 09:35:31,055 [INFO] Evaluation results for pair 42: {'mae': 4.725, 'ice': 47.25}
+2025-04-27 09:35:31,055 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Evaluating pair 43 with variables: ['a', 'b']
+2025-04-27 09:35:31,055 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,055 [INFO] Computed MAE for variables ['a', 'b']: 6.239999999999999
+2025-04-27 09:35:31,055 [INFO] Computed ICE for variables ['a', 'b']: 62.39999999999999
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 43: {'mae': 6.239999999999999, 'ice': 62.39999999999999}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 44 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 9.8
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 98.0
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 44: {'mae': 9.8, 'ice': 98.0}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 45 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 7.0
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 70.0
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 45: {'mae': 7.0, 'ice': 70.0}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 46 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 11.0
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 110.0
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 46: {'mae': 11.0, 'ice': 110.0}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 47 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 4.0
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 40.0
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 47: {'mae': 4.0, 'ice': 40.0}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 48 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 5.4
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 54.0
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 48: {'mae': 5.4, 'ice': 54.0}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 49 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 10.2
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 102.0
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 49: {'mae': 10.2, 'ice': 102.0}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 50 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 1.0
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 10.0
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 50: {'mae': 1.0, 'ice': 10.0}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 51 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 3.2132275132275128
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 32.132275132275126
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 51: {'mae': 3.2132275132275128, 'ice': 32.132275132275126}
+2025-04-27 09:35:31,056 [INFO] Parsed variable names: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Evaluating pair 52 with variables: ['a', 'b']
+2025-04-27 09:35:31,056 [INFO] Defined calculate_value function
+2025-04-27 09:35:31,056 [INFO] Computed MAE for variables ['a', 'b']: 4.224802938337656
+2025-04-27 09:35:31,056 [INFO] Computed ICE for variables ['a', 'b']: 42.24802938337656
+2025-04-27 09:35:31,056 [INFO] Evaluation results for pair 52: {'mae': 4.224802938337656, 'ice': 42.24802938337656}
+2025-04-27 09:35:31,057 [INFO] Saved results to /Users/cuiziliang/Projects/formula_fitting_validation/output/results/qwen_7b没微调的结果_with_data_code_results.json
