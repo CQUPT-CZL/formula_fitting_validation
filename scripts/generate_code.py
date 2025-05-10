@@ -1,14 +1,15 @@
 import sys
 import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import json
 import logging
+import yaml
+from tqdm import tqdm  # 导入tqdm用于显示进度条
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.data.loader import load_json, load_prompt
 from src.model.llm_interface import LLMInterface
 from src.model.code_executor import extract_code_block
 from src.utils.my_logging import setup_logging
-import yaml
 
 
 def load_config(config_path: str) -> dict:
@@ -17,17 +18,27 @@ def load_config(config_path: str) -> dict:
 
 
 def generate_code_for_entry(analysis_text: str, llm_interface: 'LLMInterface', prompt_template: str) -> str:
-    try:
-        llm_output = llm_interface.generate_code(prompt_template, analysis_text)
-        code = extract_code_block(llm_output)
-        if code:
-            # logging.info(f"Generated code for analysis: {analysis_text[:50]}...")
-            return code
-        logging.error("No Python code block found")
-        return ""
-    except Exception as e:
-        logging.error(f"Error generating code: {e}")
-        return ""
+    max_attempts = 3
+    last_output = ""
+
+    for attempt in range(max_attempts):
+        try:
+            llm_output = llm_interface.generate_code(prompt_template, analysis_text)
+            code = extract_code_block(llm_output)
+            if code:
+                logging.info(f"Generated code for analysis (attempt {attempt + 1})")
+                return code
+            logging.warning(f"No Python code block found in attempt {attempt + 1}")
+            last_output = llm_output
+        except Exception as e:
+            logging.error(f"Error generating code in attempt {attempt + 1}: {e}")
+            last_output = str(e)
+
+        if attempt < max_attempts - 1:
+            logging.info(f"Retrying... ({attempt + 2}/{max_attempts})")
+
+    logging.error(f"Failed to generate valid code after {max_attempts} attempts")
+    return last_output
 
 
 def main():
@@ -48,25 +59,30 @@ def main():
         raise FileNotFoundError(f"Input JSONL not found at: {input_path}")
 
     file_name = os.path.splitext(os.path.basename(input_path))[0]
-    logging.info(file_name)  # 输出: 两轮微调0426的结果
+    logging.info(f"Processing file: {file_name}")
 
     data = load_json(input_path)
+    total_entries = len(data)
+    logging.info(f"Total entries to process: {total_entries}")
 
     # Load prompt
     prompt_template = load_prompt(config['paths']['prompt'])
     llm_interface = LLMInterface(config)
 
-    # Generate code
+    # Generate code with progress bar
     code_dir = os.path.join(project_root, config['paths']['generated_code_dir'])
     os.makedirs(code_dir, exist_ok=True)
 
-    for idx, entry in enumerate(data):
+    # 使用tqdm显示进度条
+    for idx, entry in enumerate(tqdm(data, desc="Processing entries", unit="entry")):
         if 'predict' not in entry:
-            logging.warning(f"Entry {idx + 1} missing 'pred' field")
+            logging.warning(f"Entry {idx + 1} missing 'predict' field")
             entry['code'] = ""
             continue
         code = generate_code_for_entry(entry['predict'], llm_interface, prompt_template)
         entry['code'] = code
+        # 记录进度
+        logging.info(f"Processed entry {idx + 1}/{total_entries}")
 
     # Save updated JSON
     output_path = os.path.join(project_root, config['paths']['generated_code_dir'], file_name + '_code.json')

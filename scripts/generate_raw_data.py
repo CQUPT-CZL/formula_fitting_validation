@@ -1,23 +1,25 @@
 import sys
 import os
 import re
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import json
 import logging
+import yaml
+from typing import Callable, Optional, List, Dict
+from tqdm import tqdm  # 导入tqdm用于显示进度条
+
+# 假设这些模块存在于项目中
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.data.loader import load_jsonl, load_prompt
 from src.model.llm_interface import LLMInterface
-from typing import Callable, Optional, List, Dict
-from src.model.code_executor import extract_code_block
 from src.utils.my_logging import setup_logging
-import yaml
 
 
 def load_config(config_path: str) -> dict:
     with open(config_path, 'r') as f:
         return yaml.safe_load(f)
 
-def extract_json_data(text: str) -> Optional[List[Dict]]:
 
+def extract_json_data(text: str) -> Optional[List[Dict]]:
     # Search for JSON block, accounting for markdown code fences or plain JSON
     match = re.search(r"```json\n(.*?)\n```|(\{.*?\})", text, re.DOTALL)
     if not match:
@@ -43,19 +45,29 @@ def extract_json_data(text: str) -> Optional[List[Dict]]:
         return None
 
 
-def generate_raw_data_for_entry(analysis_text: str, llm_interface: 'LLMInterface', prompt_template: str) -> str | list[
-    dict]:
-    try:
-        llm_output = llm_interface.generate_raw_data(prompt_template, analysis_text)
-        raw_data = extract_json_data(llm_output)
-        if raw_data:
-            # logging.info(f"Generated code for analysis: {analysis_text[:50]}...")
-            return raw_data
-        logging.error("No raw_data block found")
-        return ""
-    except Exception as e:
-        logging.error(f"Error generating raw_data: {e}")
-        return ""
+def generate_raw_data_for_entry(analysis_text: str, llm_interface: 'LLMInterface', prompt_template: str) -> str | List[
+    Dict]:
+    max_attempts = 3
+    last_output = ""
+
+    for attempt in range(max_attempts):
+        try:
+            llm_output = llm_interface.generate_raw_data(prompt_template, analysis_text)
+            raw_data = extract_json_data(llm_output)
+            if raw_data:
+                logging.info(f"Generated raw_data for analysis (attempt {attempt + 1})")
+                return raw_data
+            logging.warning(f"No raw_data block found in attempt {attempt + 1}")
+            last_output = llm_output
+        except Exception as e:
+            logging.error(f"Error generating raw_data in attempt {attempt + 1}: {e}")
+            last_output = str(e)
+
+        if attempt < max_attempts - 1:
+            logging.info(f"Retrying... ({attempt + 2}/{max_attempts})")
+
+    logging.error(f"Failed to generate valid raw_data after {max_attempts} attempts")
+    return last_output
 
 
 def main():
@@ -76,27 +88,32 @@ def main():
         raise FileNotFoundError(f"Input JSONL not found at: {input_path}")
 
     file_name = os.path.splitext(os.path.basename(input_path))[0]
-    logging.info(file_name)
+    logging.info(f"Processing file: {file_name}")
 
     data = load_jsonl(input_path)
+    total_entries = len(data)
+    logging.info(f"Total entries to process: {total_entries}")
 
     # Load prompt
     prompt_template = load_prompt(config['paths']['prompt_raw'])
 
     llm_interface = LLMInterface(config)
 
-    # Generate code
+    # Generate code with progress bar
     code_dir = os.path.join(project_root, config['paths']['generated_data_dir'])
     os.makedirs(code_dir, exist_ok=True)
 
-    for idx, entry in enumerate(data):
+    # 使用tqdm显示进度条
+    for idx, entry in enumerate(tqdm(data, desc="Processing entries", unit="entry")):
         if 'predict' not in entry:
             logging.warning(f"Entry {idx + 1} missing 'predict' field")
             entry['raw_data'] = ""
             continue
         raw_data = generate_raw_data_for_entry(entry['predict'], llm_interface, prompt_template)
+        print(raw_data)
         entry['raw_data'] = raw_data
-
+        # 记录进度
+        logging.info(f"Processed entry {idx + 1}/{total_entries}")
 
     # Save updated JSON
     output_path = os.path.join(project_root, config['paths']['generated_data_dir'], file_name + '_with_data.json')
