@@ -2,12 +2,27 @@ import json
 import os
 import pandas as pd
 import numpy as np
+import logging
 import matplotlib.pyplot as plt
 import seaborn as sns
+import yaml
 from pathlib import Path
 
+def load_config(config_path: str) -> dict:
+    with open(config_path, 'r') as f:
+        return yaml.safe_load(f)
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+config_path = os.path.join(project_root, 'config', 'config.yaml')
+
+if not os.path.exists(config_path):
+    logging.error(f"Config file not found at: {config_path}")
+    raise FileNotFoundError(f"Config file not found at: {config_path}")
+
+config = load_config(config_path)
+
 # 设置文件夹路径（请替换为你的 JSON 文件夹路径）
-folder_path = r'/Users/cuiziliang/Projects/formula_fitting_validation/output/results'
+folder_path = os.path.join(project_root, config['paths']['output_dir'])
 output_dir = os.path.join(folder_path, "plots")
 os.makedirs(output_dir, exist_ok=True)
 
