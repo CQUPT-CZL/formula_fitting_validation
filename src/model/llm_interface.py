@@ -30,6 +30,18 @@ class LLMInterface:
             raise
 
 
+    def generate_pred(self, prompt: str) -> str:
+        """Generate code using LLM."""
+        try:
+            chain = self.llm | StrOutputParser()
+            output = chain.invoke(prompt)
+            logging.info("Generated pred")
+            return output
+        except Exception as e:
+            logging.error(f"Error generating code: {e}")
+            raise
+
+
     def generate_raw_data(self, prompt_template: str, analysis_text: str) -> str:
         """Generate code using LLM."""
         try:
