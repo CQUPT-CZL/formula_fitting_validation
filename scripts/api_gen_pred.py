@@ -70,15 +70,19 @@ def main():
     llm_interface = LLMInterface(config)
 
     # 使用tqdm显示进度条
+    cnt = 0
     for idx, entry in enumerate(tqdm(data, desc="Processing entries", unit="entry")):
         pred = generate_api_pred_for_entry(llm_interface, prompt=entry['prompt'])
         entry['predict'] = pred
         # 记录进度
         logging.info(f"Processed entry {idx + 1}/{total_entries}")
-        print(entry)
+        # print(entry)
+        cnt += 1
+        if cnt > 20:
+            break
 
     # Save updated JSON
-    output_path = os.path.join(project_root, config['paths']['generated_api_pred_dir'], 'api_gen_pred.json')
+    output_path = os.path.join(project_root, config['paths']['generated_api_pred_dir'], 'ds_api_gen_pred.jsonl')
     # 写入JSONL文件
     with open(output_path, 'w', encoding='utf-8') as output_file:
         for item in data:
