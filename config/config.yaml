@@ -5,6 +5,7 @@ paths:
   llm_with_data_code: data/llm_with_data_code/v2/7b_no_sft_with_data_code.json
   prompt: ../data/prompt/prompt.txt
   prompt_raw: ../data/prompt/prompt_with_raw.txt
+  prompt_api_score: ../data/prompt/prompt_gen_api_score.txt
   output_dir: output/results/v2/
   generated_data_dir: data/llm_with_data/v2/
   generated_code_dir: data/llm_with_data_code/v2/

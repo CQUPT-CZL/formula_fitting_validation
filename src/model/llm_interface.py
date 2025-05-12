@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
-from langchain.schema.output_parser import StrOutputParser
+from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
 import logging
 
 class LLMInterface:
@@ -51,4 +51,16 @@ class LLMInterface:
             return output
         except Exception as e:
             logging.error(f"Error generating raw data: {e}")
+            raise
+
+
+    def generate_metrics(self, prompt_template: str, instruction: str, predict: str) -> str:
+        """Generate code using LLM."""
+        try:
+            chain = PromptTemplate.from_template(prompt_template) | self.llm | JsonOutputParser()
+            output = chain.invoke({"instruction": instruction, "predict": predict})
+            logging.info(f"Generated metrics: {output}")
+            return output
+        except Exception as e:
+            logging.error(f"Error generating metrics: {e}")
             raise

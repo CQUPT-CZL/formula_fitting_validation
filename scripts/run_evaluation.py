@@ -10,13 +10,15 @@ import logging
 from src.data.loader import parse_variable_names, validate_data, load_json
 from src.model.code_executor import safe_exec
 from src.metrics.point_metrics import MAE, RMSE, MSE
-from src.metrics.integral_metrics import ICE  # 确保导入 ICE
+from src.metrics.api_metrics import API_Matrics
 from src.utils.my_logging import setup_logging
 from typing import List, Dict, Any, Optional
 
 def evaluate_pair(
     raw_data: List[Dict[str, Any]],
     code: str,
+    prompt: str,
+    prediction: str,
     metrics: List['BaseMetric'],
     pair_index: int
 ) -> Optional[Dict[str, float]]:
@@ -59,6 +61,11 @@ def evaluate_pair(
                 except Exception as e:
                     logging.error(f"Error computing {metric.__class__.__name__}: {e}")
             logging.info(f"Evaluation results for pair {pair_index}: {results}")
+
+            # api 主观测评
+            scores = API_Matrics().compute(instruction=prompt, prediction=prediction)
+            results['api'] = scores
+            print(results)
             return results
     return None
 
@@ -89,7 +96,7 @@ def main():
 
     metrics = [MAE(), RMSE(), MSE()]
     metric_results = {metric.__class__.__name__.lower(): [] for metric in metrics}
-
+    metric_results["api"] = []
     for idx, en in enumerate(data):
         if 'code' not in en or not en['code']:
             logging.warning(f"Pair {idx + 1} missing code")
@@ -99,6 +106,8 @@ def main():
         result = evaluate_pair(
             en['raw_data'],
             en['code'],
+            en['prompt'],
+            en['predict'],
             metrics,
             idx + 1
         )
@@ -106,6 +115,8 @@ def main():
             for metric in metrics:
                 metric_name = metric.__class__.__name__.lower()
                 metric_results[metric_name].append(result[metric_name])
+            print(result['api'])
+            metric_results['api'].append(result['api'])
         else:
             for metric in metrics:
                 metric_results[metric.__class__.__name__.lower()].append(None)
