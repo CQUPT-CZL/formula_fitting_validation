@@ -64,3 +64,13 @@ class LLMInterface:
         except Exception as e:
             logging.error(f"Error generating metrics: {e}")
             raise
+
+    def generate_code_metrics(self, prompt_template: str, code: str, gt_code: str) -> str:
+        try:
+            chain = PromptTemplate.from_template(prompt_template) | self.llm | JsonOutputParser()
+            output = chain.invoke({"code": code, "gt_code": gt_code})
+            logging.info(f"Generated code metrics: {output}")
+            return output
+        except Exception as e:
+            logging.error(f"Error generating code metrics: {e}")
+            raise

@@ -17,6 +17,7 @@ from typing import List, Dict, Any, Optional
 def evaluate_pair(
     raw_data: List[Dict[str, Any]],
     code: str,
+    gt_code: str,
     prompt: str,
     prediction: str,
     metrics: List['BaseMetric'],
@@ -63,9 +64,9 @@ def evaluate_pair(
             logging.info(f"Evaluation results for pair {pair_index}: {results}")
 
             # api 主观测评
-            scores = API_Matrics().compute(instruction=prompt, prediction=prediction)
+            scores = API_Matrics().compute(instruction=prompt, prediction=prediction, code=code, gt_code=gt_code)
             results['api'] = scores
-            print(results)
+            # print(results)
             return results
     return None
 
@@ -89,7 +90,7 @@ def main():
         raise FileNotFoundError(f"Data not found at: {input_path}")
 
     file_name = os.path.splitext(os.path.basename(input_path))[0]
-    logging.info(file_name)  # 输出: 两轮微调0426的结果
+    logging.info(file_name)  # 输出: 两轮微调0426的*version*结果
 
     with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -104,12 +105,13 @@ def main():
                 metric_results[metric.__class__.__name__.lower()].append(None)
             continue
         result = evaluate_pair(
-            en['raw_data'],
-            en['code'],
-            en['prompt'],
-            en['predict'],
-            metrics,
-            idx + 1
+            raw_data = en['raw_data'],
+            code = en['code'],
+            gt_code = en['gt_code'],
+            prompt = en['prompt'],
+            prediction = en['predict'],
+            metrics = metrics,
+            pair_index = idx + 1
         )
         if result:
             for metric in metrics:

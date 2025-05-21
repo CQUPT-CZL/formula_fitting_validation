@@ -21,9 +21,11 @@ class API_Matrics():
         self,
         instruction: str,
         prediction: str,
+        code: str,
+        gt_code: str
     ):
         scores = []
-        if random.random() > 0.95:
+        if random.random() > 0.60:
             try:
                 if not os.path.exists(config_path):
                     logging.error(f"Config file not found at: {config_path}")
@@ -37,6 +39,13 @@ class API_Matrics():
                 llm_interface = LLMInterface(config)
 
                 scores = llm_interface.generate_metrics(prompt_template, instruction, prediction)
+
+
+                # 获取code的api代码
+                code_prompt_template = load_prompt(config['paths']['prompt_code_judge'])
+                api_code_score = llm_interface.generate_code_metrics(code_prompt_template, code, gt_code)
+                scores['CodeEq'] = api_code_score
+
                 print(scores)
 
             except Exception as e:
