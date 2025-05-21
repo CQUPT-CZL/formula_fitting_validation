@@ -43,14 +43,48 @@ def remove_outliers(data):
     upper_bound = q3 + 1.5 * iqr
     return [x for x in cleaned_data if lower_bound <= x <= upper_bound]
 
+
+# 处理data数据
+def extract_metrics(data):
+    """
+    从输入的字典中提取标准指标和api中的评估指标
+    输入：data - 包含模型评估数据的字典
+    输出：返回一个包含七个键的字典：'mae', 'rmse', 'mse', 'SC', 'LC', 'CA', 'CodeEq'
+    """
+
+    # 提取标准指标
+    result = {
+        "mae": data.get("mae", []),
+        "rmse": data.get("rmse", []),
+        "mse": data.get("mse", []),
+    }
+
+    # 提取api中的评估指标（SC, LC, CA, CodeEq）
+    if "api" in data:
+        api_data = data["api"]
+        for item in api_data:
+            if 'scores' in item:
+                continue
+            for metrics in ['SC', 'LC', 'CA', 'CodeEq']:
+                if metrics not in result:
+                    result[metrics] = []
+                result[metrics].append(item[metrics]['score'])
+    else:
+        # 如果没有api键，填充为None
+        result["SC"] = result["LC"] = result["CA"] = result["CodeEq"] = None
+
+    return result
+
+
+
 # 读取所有 JSON 文件
 model_metrics = {}
 for file_name in os.listdir(folder_path):
     if file_name.endswith(".json"):
         file_path = os.path.join(folder_path, file_name)
         try:
-            with open(file_path, 'r') as f:
-                data = json.load(f)
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = extract_metrics(json.load(f))
             model_name = Path(file_name).stem  # 使用文件名（无扩展名）作为模型名
 
             # 强调文件名的后缀
@@ -66,6 +100,7 @@ all_metrics = set()
 for model_data in model_metrics.values():
     all_metrics.update(model_data.keys())
 all_metrics = sorted(all_metrics)  # 排序以保持一致
+
 
 # 处理数据：移除异常值并计算均值和中位数
 stats_data = {metric: {'mean': {}, 'median': {}} for metric in all_metrics}
@@ -204,33 +239,6 @@ else:
     print("Error: No metrics found to plot.")
 
 
-# 异常值比例热力图
-outlier_proportions = {metric: {} for metric in all_metrics}
-for metric in all_metrics:
-    for model_name, model_data in model_metrics.items():
-        if metric in model_data and model_data[metric]:
-            total_count = len(model_data[metric])  # 原始数据点数
-            valid_count = len(cleaned_data[metric].get(model_name, []))  # 清理后数据点数
-            if total_count > 0:
-                outlier_proportions[metric][model_name] = (total_count - valid_count) / total_count
-            else:
-                outlier_proportions[metric][model_name] = 0.0
-        else:
-            outlier_proportions[metric][model_name] = 0.0
-
-# 转换为 DataFrame 并绘制热力图
-outlier_df = pd.DataFrame(outlier_proportions).T  # 行是指标，列是模型
-if not outlier_df.empty:
-    plt.figure(figsize=(12, 6))
-    sns.heatmap(outlier_df, annot=True, cmap="Reds", fmt=".2f", cbar_kws={'label': 'Outlier Proportion'})
-    plt.title("Proportion of Outliers per Metric and Model")
-    plt.xlabel("Model")
-    plt.ylabel("Metric")
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'outlier_proportion_heatmap.png'))
-    plt.close()
-else:
-    print("Warning: No data for outlier proportion heatmap.")
 
 # 更新打印语句
 print(f"Plots saved to {output_dir}: boxplot_metrics.png, barplot_metrics.png, outlier_proportion_heatmap.png")
