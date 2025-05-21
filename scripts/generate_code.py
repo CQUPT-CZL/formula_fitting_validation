@@ -79,8 +79,14 @@ def main():
             logging.warning(f"Entry {idx + 1} missing 'predict' field")
             entry['code'] = ""
             continue
+
+        # 生成预测的代码
         code = generate_code_for_entry(entry['predict'], llm_interface, prompt_template)
         entry['code'] = code
+
+        # 生成gt的代码
+        code = generate_code_for_entry(entry['label'], llm_interface, prompt_template)
+        entry['gt_code'] = code
         # 记录进度
         logging.info(f"Processed entry {idx + 1}/{total_entries}")
 
