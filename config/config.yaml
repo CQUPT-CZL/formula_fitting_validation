@@ -1,22 +1,23 @@
 
 paths:
-  raw_llm: data/raw_llm/v2/1.5b_no_sft.jsonl
-  llm_with_data: data/llm_with_data/v2/7b_no_sft_with_data.json
-  llm_with_data_code: data/llm_with_data_code/v2/7b_no_sft_with_data_code.json
+  raw_llm: data/raw_llm/v3/qwen_72b_api_pred.jsonl
+  llm_with_data: data/llm_with_data/v3/qwen_72b_api_pred_with_data.json
+  llm_with_data_code: data/llm_with_data_code/v3/7b_no_sft_with_data_code.json
   prompt: ../data/prompt/prompt.txt
   prompt_raw: ../data/prompt/prompt_with_raw.txt
   prompt_api_score: ../data/prompt/prompt_gen_api_score.txt
-  output_dir: output/results/v2/
-  generated_data_dir: data/llm_with_data/v2/
-  generated_code_dir: data/llm_with_data_code/v2/
-  generated_api_pred_dir: data/raw_llm/v2/
-  generated_pic_dir: output/results/v2
+  prompt_code_judge: ../data/prompt/prompt_code_judge.txt
+  output_dir: output/results/v3/
+  generated_data_dir: data/llm_with_data/v3/
+  generated_code_dir: data/llm_with_data_code/v3/
+  generated_api_pred_dir: data/raw_llm/v3/
+  generated_pic_dir: output/results/v3/
 model:
   type: deepseek-chat
   api_key: sk-07a5ae9fd7744216b6bf26209fd1b5cc
   base_url: https://api.deepseek.com/v1
 #  api_key: sk-a90d213e43f24aef976e71b452befcc5
-#  type: qwen-plus
+#  type: qwen2.5-72b-instruct
 #  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
   temperature: 0.01
 metrics:
