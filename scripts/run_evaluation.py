@@ -64,7 +64,7 @@ def evaluate_pair(
             logging.info(f"Evaluation results for pair {pair_index}: {results}")
 
             # api 主观测评
-            scores = API_Matrics().compute(instruction=prompt, prediction=prediction, code=code, gt_code=gt_code)
+            scores = API_Matrics().compute(instruction=prompt, prediction=prediction, code=code, gt_code=gt_code, idx = pair_index)
             results['api'] = scores
             # print(results)
             return results
@@ -117,7 +117,7 @@ def main():
             for metric in metrics:
                 metric_name = metric.__class__.__name__.lower()
                 metric_results[metric_name].append(result[metric_name])
-            print(result['api'])
+            # print(result['api'])
             metric_results['api'].append(result['api'])
         else:
             for metric in metrics:

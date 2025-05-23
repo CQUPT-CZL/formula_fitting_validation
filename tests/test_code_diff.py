@@ -3,27 +3,28 @@ import inspect
 import random
 import numpy as np
 
-file = r'../data/llm_with_data_code/v3/7b_no_sft_with_data_code.json'
+file = r'../data/llm_with_data_code/v3/1.5b_no_sft_with_data_code.json'
 
 with open(file, encoding='utf-8') as f:
     data = json.load(f)
 
-
 def get_func_from_code(code_str):
-    local_vars = {}
+    # 在 exec 中导入需要的库（math、numpy等）
+    local_vars = {"math": __import__("math"), "np": np}
     exec(code_str, {}, local_vars)
     return local_vars.get("calculate_value")
 
-def generate_inputs(func, n_samples=20, input_range=(-10, 10)):
+def generate_inputs(func, n_samples=20, input_range=(-20, 20)):
     sig = inspect.signature(func)
     param_count = len(sig.parameters)
     inputs = []
     for _ in range(n_samples):
         args = tuple(random.randint(*input_range) for _ in range(param_count))
+        # print(args)
         inputs.append(args)
     return inputs
 
-def compare_pair(code_str, gt_code_str, n_samples=2000):
+def compare_pair(code_str, gt_code_str, n_samples=20):
     try:
         func_pred = get_func_from_code(code_str)
         func_gt = get_func_from_code(gt_code_str)
@@ -37,7 +38,8 @@ def compare_pair(code_str, gt_code_str, n_samples=2000):
                 diffs.append(abs(y_pred - y_true))
             except Exception as e:
                 # 不可比较，记录为无穷大误差
-                diffs.append(float("inf"))
+                print(e)
+                # diffs.append(float("inf"))
 
         diffs = np.array(diffs)
         return {
@@ -52,6 +54,8 @@ def compare_pair(code_str, gt_code_str, n_samples=2000):
 def batch_compare(pairs, n_samples=20):
     results = []
     for i, (code, gt_code) in enumerate(pairs):
+        if i < 49:
+            continue
         result = compare_pair(code, gt_code, n_samples)
 
         results.append(result)
@@ -60,10 +64,14 @@ def batch_compare(pairs, n_samples=20):
 results = []
 i = 0
 for item in data:
+    # if i < 49:
+    #     i += 1
+    #     continue
+
     result = compare_pair(item['code'], item['gt_code'])
     results.append(result)
 
 print(len(results))
 import pandas as pd
 df = pd.DataFrame(results)
-print(df)
+print(df.head())
