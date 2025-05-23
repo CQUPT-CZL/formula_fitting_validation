@@ -63,7 +63,7 @@ def extract_metrics(data):
     if "api" in data:
         api_data = data["api"]
         for item in api_data:
-            if 'scores' in item:
+            if 'SC' not in item:
                 continue
             for metrics in ['SC', 'LC', 'CA', 'CodeEq']:
                 if metrics not in result:
@@ -110,10 +110,14 @@ for metric in all_metrics:
     for model_name, model_data in model_metrics.items():
         if metric in model_data and model_data[metric]:  # 确保指标存在且非空
             # 移除异常值
-            clean_values = remove_outliers(model_data[metric])
+            if metric in ['mse', 'rmse', 'mae']:
+                clean_values = remove_outliers(model_data[metric])
+            else:
+                clean_values = model_data[metric]
             cleaned_data[metric][model_name] = clean_values
             # 计算均值和中位数
             if clean_values:  # 确保清理后仍有数据
+                # print(f"{metric}: {clean_values}")
                 stats_data[metric]['mean'][model_name] = np.mean(clean_values)
                 stats_data[metric]['median'][model_name] = np.median(clean_values)
             else:
@@ -181,67 +185,6 @@ else:
 
 import numpy as np
 from math import pi
-
-# 雷达图
-if n_metrics >= 3:  # 雷达图适合 3 个及以上指标
-    # 准备数据（均值）
-    labels = all_metrics
-    n_metrics = len(labels)
-    angles = [n / float(n_metrics) * 2 * pi for n in range(n_metrics)]
-    angles += angles[:1]  # 闭合图形
-
-    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
-    for model_name in stats_data[all_metrics[0]]['mean']:
-        values = [stats_data[metric]['mean'].get(model_name, 0) for metric in all_metrics]
-        # 归一化值以适应雷达图
-        max_val = max(max(values), 1)  # 避免除以 0
-        values = [v / max_val for v in values]
-        values += values[:1]  # 闭合图形
-        ax.plot(angles, values, linewidth=2, linestyle='solid', label=model_name)
-        ax.fill(angles, values, alpha=0.1)
-
-    ax.set_theta_offset(pi / 2)
-    ax.set_theta_direction(-1)
-    ax.set_thetagrids([a * 180 / pi for a in angles[:-1]], labels)
-    ax.set_title("Radar Chart of Mean Metrics (Outliers Removed)", pad=20)
-    ax.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
-    plt.savefig(os.path.join(output_dir, 'radarplot_metrics.png'))
-    plt.close()
-else:
-    print("Warning: Radar chart requires at least 3 metrics.")
-
-
-# 小提琴图
-if n_metrics > 0:
-    fig, axes = plt.subplots(n_metrics, 1, figsize=(10, 4 * n_metrics), sharex=True)
-    if n_metrics == 1:
-        axes = [axes]
-    for i, metric in enumerate(all_metrics):
-        plot_data = pd.DataFrame({
-            model_name: pd.Series(values) for model_name, values in cleaned_data[metric].items()
-        })
-        if not plot_data.empty:
-            sns.violinplot(data=plot_data, ax=axes[i])
-            axes[i].set_title(f'Violin Plot of {metric} (Outliers Removed)')
-            axes[i].set_ylabel(metric)
-            axes[i].set_xlabel('Model')
-            axes[i].grid(True)
-            axes[i].tick_params(axis='x', rotation=45)
-            # 可选：添加对数刻度
-            if plot_data.max().max() > 1000:  # 如果值范围大
-                axes[i].set_yscale('log')
-        else:
-            print(f"Warning: No data to plot for {metric}.")
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'violinplot_metrics.png'))
-    plt.close()
-else:
-    print("Error: No metrics found to plot.")
-
-
-
-# 更新打印语句
-print(f"Plots saved to {output_dir}: boxplot_metrics.png, barplot_metrics.png, outlier_proportion_heatmap.png")
 
 
 print(f"Plots saved to {output_dir}: boxplot_metrics.png, barplot_metrics.png")
