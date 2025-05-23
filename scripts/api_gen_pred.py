@@ -77,12 +77,12 @@ def main():
         # 记录进度
         logging.info(f"Processed entry {idx + 1}/{total_entries}")
         # print(entry)
-        cnt += 1
-        if cnt > 20:
-            break
+        # cnt += 1
+        # if cnt > 20:
+        #     break
 
     # Save updated JSON
-    output_path = os.path.join(project_root, config['paths']['generated_api_pred_dir'], 'ds_api_gen_pred.jsonl')
+    output_path = os.path.join(project_root, config['paths']['generated_api_pred_dir'], 'qwen_72b_api_pred.jsonl')
     # 写入JSONL文件
     with open(output_path, 'w', encoding='utf-8') as output_file:
         for item in data:
