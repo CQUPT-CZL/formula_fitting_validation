@@ -22,10 +22,10 @@ class API_Matrics():
         instruction: str,
         prediction: str,
         code: str,
-        gt_code: str
+        gt_code: str,
+        idx: int
     ):
-        scores = []
-        if random.random() > 0.60:
+        if idx % 2 == 0:
             try:
                 if not os.path.exists(config_path):
                     logging.error(f"Config file not found at: {config_path}")
@@ -46,11 +46,11 @@ class API_Matrics():
                 api_code_score = llm_interface.generate_code_metrics(code_prompt_template, code, gt_code)
                 scores['CodeEq'] = api_code_score
 
-                print(scores)
+                # print(scores)
 
             except Exception as e:
                 logging.error(f"Error: {e}")
                 raise
         else:
-            scores = {'scores': 10}
+            scores = {}
         return scores
