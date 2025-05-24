@@ -2,76 +2,61 @@ import json
 import inspect
 import random
 import numpy as np
-
-file = r'../data/llm_with_data_code/v3/1.5b_no_sft_with_data_code.json'
-
-with open(file, encoding='utf-8') as f:
-    data = json.load(f)
-
-def get_func_from_code(code_str):
-    # 在 exec 中导入需要的库（math、numpy等）
-    local_vars = {"math": __import__("math"), "np": np}
-    exec(code_str, {}, local_vars)
-    return local_vars.get("calculate_value")
-
-def generate_inputs(func, n_samples=20, input_range=(-20, 20)):
-    sig = inspect.signature(func)
-    param_count = len(sig.parameters)
-    inputs = []
-    for _ in range(n_samples):
-        args = tuple(random.randint(*input_range) for _ in range(param_count))
-        # print(args)
-        inputs.append(args)
-    return inputs
-
-def compare_pair(code_str, gt_code_str, n_samples=20):
-    try:
-        func_pred = get_func_from_code(code_str)
-        func_gt = get_func_from_code(gt_code_str)
-        inputs = generate_inputs(func_gt, n_samples)
-
-        diffs = []
-        for args in inputs:
-            try:
-                y_pred = func_pred(*args)
-                y_true = func_gt(*args)
-                diffs.append(abs(y_pred - y_true))
-            except Exception as e:
-                # 不可比较，记录为无穷大误差
-                print(e)
-                # diffs.append(float("inf"))
-
-        diffs = np.array(diffs)
-        return {
-            "mae": np.mean(diffs),
-            "max_error": np.max(diffs),
-            "mse": np.mean(diffs ** 2),
-            "valid_count": np.sum(np.isfinite(diffs))
-        }
-    except Exception as e:
-        return {"error": str(e)}
-
-def batch_compare(pairs, n_samples=20):
-    results = []
-    for i, (code, gt_code) in enumerate(pairs):
-        if i < 49:
-            continue
-        result = compare_pair(code, gt_code, n_samples)
-
-        results.append(result)
-    return results
-
-results = []
-i = 0
-for item in data:
-    # if i < 49:
-    #     i += 1
-    #     continue
-
-    result = compare_pair(item['code'], item['gt_code'])
-    results.append(result)
-
-print(len(results))
+import os
+from src.metrics.integral_metrics import IAE
 import pandas as pd
-df = pd.DataFrame(results)
-print(df.head())
+
+
+
+# === 主逻辑：遍历目录下所有 json 文件，计算每个的平均 MAE ===
+def evaluate_folder(folder_path):
+    results_summary = []
+
+    for file_name in os.listdir(folder_path):
+        print(file_name)
+        if file_name.endswith(".json"):
+            full_path = os.path.join(folder_path, file_name)
+            try:
+                with open(full_path, encoding='utf-8') as f:
+                    data = json.load(f)
+                maes = []
+                for item in data:
+                    mae = IAE().compute(item['code'], item['gt_code'])
+                    if mae is not None:
+                        maes.append(np.round(mae, 4))
+                    else:
+                        print('0---')
+                        maes.append(None)
+                print(len(maes), maes)
+                file_name = '../output/results/v3/' + file_name.replace('.json', "_results.json")
+                with open (file_name, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                data['iae'] = maes
+
+                with open(file_name, 'w', encoding='utf-8') as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+
+                # results_summary.append({
+                #     "file": file_name,
+                #     "mae_mean": mean_mae,
+                #     "valid_samples": len(maes),
+                #     "total_samples": len(data)
+                # })
+            except Exception as e:
+                # print(e)
+                results_summary.append({
+                    "file": file_name,
+                    "mae_mean": None,
+                    "error": str(e)
+                })
+        # break
+
+    df_result = pd.DataFrame(results_summary)
+    return df_result
+
+# === 调用示例（修改成你的文件夹路径） ===
+folder = "../data/llm_with_data_code/v3"  # 你要评估的文件夹路径
+df_summary = evaluate_folder(folder)
+
+# === 可选：保存为 CSV ===
+# df_summary.to_csv("model_mae_summary.csv", index=False)
