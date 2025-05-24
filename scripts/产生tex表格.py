@@ -36,7 +36,7 @@ output_dir = os.path.join(folder_path, "plots")
 os.makedirs(output_dir, exist_ok=True)
 
 # 你所有要画的指标列表（可以自行添加）
-metrics_list = ['mse', 'mae', 'rmse', 'SC', 'LC', 'CA', 'CodeEq']
+metrics_list = ['mse', 'mae', 'rmse', 'SC', 'LC', 'CA', 'CodeEq', 'iae']
 
 # 读取所有 JSON 文件
 model_metrics = {}
@@ -85,42 +85,49 @@ def remove_outliers_and_average(values):
     return np.mean(filtered) if filtered else None
 
 
-# 依次为每个指标作图
-for metric in metrics_list:
-    # 构造 DataFrame：行为模型，列为变量数（2/3/4），值为均值
-    results = {}
-    for model, tasks in model_metrics.items():
-        results[model] = {}
-        for task, metrics in tasks.items():
-            vals = metrics.get(metric, [])
-            avg = remove_outliers_and_average(vals)
-            results[model][task] = avg
-    df = pd.DataFrame(results).T
-    # 只保留有数据的列
-    df = df.loc[:, (df.notnull().any())]
-    # 可视化
-    ax = df.plot(kind='bar', figsize=(10, 6))
-    ax.set_title(f"Average {metric.upper()} per Variable Count (Outliers Removed)")
-    ax.set_ylabel(metric.upper())
-    ax.set_xlabel("Model")
-    plt.xticks(rotation=45, ha='right')
-    plt.legend(title="Variable Count")
-    plt.tight_layout()
-    # plt.savefig(os.path.join(output_dir, f"{metric}_barplot_by_var_count.png"))
-    plt.show()
-    plt.close()
+def escape_latex(s):
+    return str(s).replace('_', r'\_')
 
+# 指标是否是“越小越好”
+minimize_metrics = {'mse', 'mae', 'rmse', 'iae'}
 
-print(f"All plots saved to {output_dir}")
-
-
-def df_to_latex_booktabs(df, caption="Model metrics comparison", label="tab:metrics"):
+def df_to_latex_booktabs_single_metric_highlighted(df, metric, caption_prefix="Model performance on", label_prefix="tab:"):
     colnames = " & ".join([str(col) for col in df.columns])
     header = "\\toprule\nModel & " + colnames + " \\\\\n\\midrule"
     rows = []
+
+    # 每列找最优值和次优值（跳过 None）
+    col_best_idx = {}
+    col_second_idx = {}
+    for col in df.columns:
+        col_vals = df[col].dropna()
+        if col_vals.empty:
+            continue
+        sorted_vals = col_vals.sort_values(ascending=(metric.lower() in minimize_metrics))
+        best_val = sorted_vals.iloc[0]
+        second_val = sorted_vals.iloc[1] if len(sorted_vals) > 1 else None
+        col_best_idx[col] = (col_vals == best_val)
+        col_second_idx[col] = (col_vals == second_val) if second_val is not None else pd.Series(False, index=col_vals.index)
+
     for idx, row in df.iterrows():
-        row_str = " & ".join(f"{v:.2f}" if pd.notnull(v) else "---" for v in row)
-        rows.append(f"{idx} & {row_str} \\\\")
+        row_name = escape_latex(idx)
+        row_cells = []
+        for col in df.columns:
+            val = row[col]
+            if pd.isnull(val):
+                cell = "---"
+            else:
+                is_best = col_best_idx[col].get(idx, False)
+                is_second = col_second_idx[col].get(idx, False)
+                formatted = f"{val:.2f}"
+                if is_best:
+                    formatted = f"\\textbf{{{formatted}}}"
+                elif is_second:
+                    formatted = f"\\underline{{{formatted}}}"
+                cell = formatted
+            row_cells.append(cell)
+        rows.append(f"{row_name} & {' & '.join(row_cells)} \\\\")
+
     table = (
         "\\begin{table}[ht]\n"
         "\\centering\n"
@@ -129,27 +136,39 @@ def df_to_latex_booktabs(df, caption="Model metrics comparison", label="tab:metr
         + "\n".join(rows) +
         "\n\\bottomrule\n"
         "\\end{tabular}\n"
-        f"\\caption{{{caption}}}\n"
-        f"\\label{{{label}}}\n"
-        "\\end{table}"
+        f"\\caption{{{caption_prefix} {metric.upper()}}}\n"
+        f"\\label{{{label_prefix}{metric.lower()}}}\n"
+        "\\end{table}\n\n"
     )
     return table
 
 
-results_full = {}
-for model, tasks in model_metrics.items():
-    results_full[model] = {}
-    for task, metrics in tasks.items():  # task: '2', '3', '4'
-        for metric in metrics_list:
-            key = f"{metric.upper()}-{task}"
-            vals = metrics.get(metric, [])
+
+# 汇总写入一个 .tex 文件
+all_tables = ""
+
+for metric in metrics_list:
+    results = {}
+    for model, tasks in model_metrics.items():
+        results[model] = {}
+        for var_count in ['2', '3', '4']:
+            vals = tasks.get(var_count, {}).get(metric, [])
             avg = remove_outliers_and_average(vals)
-            results_full[model][key] = avg
+            results[model][var_count] = avg
 
-df_full = pd.DataFrame(results_full).T
+    df_metric = pd.DataFrame(results).T
+    # 添加 "All" 列，表示总体平均
+    df_metric['All'] = df_metric.mean(axis=1)
 
-latex_code = df_to_latex_booktabs(df_full)
-with open(os.path.join(output_dir, "all_metrics_table.tex"), "w", encoding="utf-8") as f:
-    f.write(latex_code)
+    # 保留有数据的列（包括 All）
+    df_metric = df_metric.loc[:, (df_metric.notnull().any())]
 
-print("Latex三线表代码已保存：", os.path.join(output_dir, "all_metrics_table.tex"))
+    all_tables += df_to_latex_booktabs_single_metric_highlighted(df_metric, metric)
+
+
+# 最终写入一个文件
+tex_path = os.path.join(output_dir, "all_metrics_table.tex")
+with open(tex_path, "w", encoding="utf-8") as f:
+    f.write(all_tables)
+
+print(f"LaTeX 三线表合集已保存：{tex_path}")
