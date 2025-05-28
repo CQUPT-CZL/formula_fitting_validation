@@ -3,12 +3,20 @@ import inspect
 import numpy as np
 import random
 import logging
+from .base_metric import BaseMetric
 
-class IAE():
+class IAE(BaseMetric):
     def compute(
-        self,
-        code: str,
-        gt_code: str,
+            self,
+            predictions: List[float],
+            ground_truths: List[float],
+            raw_data: List[Dict[str, Any]],
+            variable_names: List[str],
+            instruction: str,
+            prediction: str,
+            code: str,
+            gt_code: str,
+            idx: int
     ) -> float | None:
         try:
 
