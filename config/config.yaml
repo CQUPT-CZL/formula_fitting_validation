@@ -9,8 +9,8 @@ paths:
   prompt_code_judge: ../data/prompt/prompt_code_judge.txt
   prompt_sc_score: ../data/prompt/prompt_sc_score.txt
   prompt_ca_score: ../data/prompt/prompt_ca_score.txt
-  prompt_la_score: ../data/prompt/prompt_la_score.txt
-  output_dir: output/results/v3/
+  prompt_lc_score: ../data/prompt/prompt_lc_score.txt
+  output_dir: output/results/v4/
   generated_data_dir: data/llm_with_data/v3/
   generated_code_dir: data/llm_with_data_code/v3/
   generated_api_pred_dir: data/raw_llm/v3/
@@ -29,8 +29,8 @@ metrics:
 #  - rmse
 #  - codeqe
 #  - ca
-#  - lc
-  - sc
+  - lc
+#  - sc
 #  - iae
 logging:
   level: INFO
