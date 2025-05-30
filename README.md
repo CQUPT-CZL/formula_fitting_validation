@@ -47,6 +47,6 @@
 
 `分析清晰度`:CA
 
-`公式代码一致性`:CodeEq
+`定积分差异`: IAE
 
-`空间平均绝对误差乘体积`: WIE = Weighted Integral  Error
+
