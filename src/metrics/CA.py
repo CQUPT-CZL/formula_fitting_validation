@@ -49,4 +49,4 @@ class CA(BaseMetric):
                 raise
         else:
             scores = {}
-        return scores
+        return scores if 'CA' in scores else None

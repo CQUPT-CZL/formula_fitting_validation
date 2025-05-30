@@ -29,7 +29,7 @@ class SC(BaseMetric):
             gt_code: str,
             idx: int
     ):
-        if idx % 10 == 0:
+        if idx % 2 == 0:
             try:
                 if not os.path.exists(config_path):
                     logging.error(f"Config file not found at: {config_path}")
@@ -48,4 +48,4 @@ class SC(BaseMetric):
                 raise
         else:
             scores = {}
-        return scores
+        return scores['SC'] if 'SC' in scores else None

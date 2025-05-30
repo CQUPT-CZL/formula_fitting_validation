@@ -50,4 +50,4 @@ class LC(BaseMetric):
                 raise
         else:
             scores = {}
-        return scores
+        return scores if 'LC' in scores else None

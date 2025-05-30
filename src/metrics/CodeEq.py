@@ -48,4 +48,4 @@ class CodeEq(BaseMetric):
                 raise
         else:
             scores = {}
-        return scores
+        return scores if 'CodeEq' in scores else None

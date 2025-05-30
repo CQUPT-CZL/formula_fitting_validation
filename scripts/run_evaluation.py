@@ -59,29 +59,32 @@ def evaluate_pair(
             except Exception as e:
                 logging.error(f"Error evaluating sample {sample_idx + 1}: {e}")
 
-        if valid_samples > 0:
-            results = {}
-            for metric in metrics:
-                try:
-                    metric_name = metric.__class__.__name__.lower()
-                    results[metric_name] = metric.compute(
-                        # predictions, ground_truths, raw_data, variable_names
-                        predictions = predictions,
-                        ground_truths = ground_truths,
-                        raw_data = raw_data,
-                        variable_names = variable_names,
-                        instruction = prompt,
-                        prediction = prediction,
-                        code = code,
-                        gt_code = gt_code,
-                        idx = pair_index
-                    )
-                except Exception as e:
-                    logging.error(f"Error computing {metric.__class__.__name__}: {e}")
+        results = {}
+        for metric in metrics:
+            metric_name = metric.__class__.__name__.lower()
+            if metric_name in ['mse', 'mae', 'rmse'] and valid_samples == 0:
+                results[metric_name] = None
+                continue
+            # print(metric)
+            try:
+                results[metric_name] = metric.compute(
+                    # predictions, ground_truths, raw_data, variable_names
+                    predictions = predictions,
+                    ground_truths = ground_truths,
+                    raw_data = raw_data,
+                    variable_names = variable_names,
+                    instruction = prompt,
+                    prediction = prediction,
+                    code = code,
+                    gt_code = gt_code,
+                    idx = pair_index
+                )
+            except Exception as e:
+                logging.error(f"Error computing {metric.__class__.__name__}: {e}")
             logging.info(f"Evaluation results for pair {pair_index}: {results}")
-
+            # print(results)
             # api 主观测评
-            return results
+        return results
     return None
 
 def main():
@@ -174,8 +177,7 @@ def main():
             if i >= len(old_results[metric_name]):
                 old_results[metric_name].append(None)
 
-            if new_list[i] is not None:
-                old_results[metric_name][i] = new_list[i]
+            old_results[metric_name][i] = new_list[i]
             # 否则保留旧值
 
     # 保存合并后的结果
