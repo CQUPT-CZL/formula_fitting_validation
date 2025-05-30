@@ -35,8 +35,8 @@ folder_path = os.path.join(project_root, config['paths']['output_dir'])
 output_dir = os.path.join(folder_path, "plots")
 os.makedirs(output_dir, exist_ok=True)
 
-# 你所有要画的指标列表（可以自行添加）
-metrics_list = ['mse', 'mae', 'rmse', 'SC', 'LC', 'CA', 'CodeEq', 'iae']
+# 要的指标列表
+metrics_list = ['mse', 'mae', 'rmse', 'sc', 'lc', 'ca', 'iae']
 
 # 读取所有 JSON 文件
 model_metrics = {}
@@ -50,29 +50,33 @@ for file_name in os.listdir(folder_path):
             # 强调文件名的后缀
             suffix = "_with_data_code_results"
             model_name = model_name.replace(suffix, "")
-            model_metrics[model_name] = {str(k): {metric: [] for metric in metrics_list} for k in [2, 3, 4]}
+            model_metrics[model_name] = {str(k): {metric: [] for metric in metrics_list} for k in [2, 3, 4, 'all']}
 
             # 采集各指标
             for metric in metrics_list:
-                if metric in ['SC', 'LC', 'CA', 'CodeEq']:
+                if metric in ['sc', 'lc', 'ca', 'CodeEq']:
                     # 从 api 部分抽取
-                    if 'api' in data:
-                        for i, item in enumerate(data['api']):
-                            if isinstance(item, dict) and metric in item:
-                                score = item[metric].get('score', None)
-                            else:
-                                score = None
-                            if i < len(var_nums):
-                                model_metrics[model_name][str(var_nums[i])][metric].append(score)
+                    for i, item in enumerate(data[metric]):
+                        if isinstance(item, dict):
+                            score = item.get('score', None)
+                        else:
+                            score = None
+                            continue
+                        if i < len(var_nums):
+                            model_metrics[model_name][str(var_nums[i])][metric].append(score)
+                            model_metrics[model_name]['all'][metric].append(score)
                 else:
                     if metric in data:
                         for i, item_val in enumerate(data[metric]):
                             if i < len(var_nums):
                                 model_metrics[model_name][str(var_nums[i])][metric].append(item_val)
+                                model_metrics[model_name]['all'][metric].append(item_val)
         except json.JSONDecodeError as e:
             print(f"Error: Failed to parse {file_name}: {e}")
             continue
 
+
+print(model_metrics)
 
 # 异常值移除 + 平均值计算
 def remove_outliers_and_average(values):
@@ -151,17 +155,17 @@ for metric in metrics_list:
     results = {}
     for model, tasks in model_metrics.items():
         results[model] = {}
-        for var_count in ['2', '3', '4']:
+        for var_count in ['2', '3', '4', 'all']:
             vals = tasks.get(var_count, {}).get(metric, [])
             avg = remove_outliers_and_average(vals)
             results[model][var_count] = avg
 
     df_metric = pd.DataFrame(results).T
     # 添加 "All" 列，表示总体平均
-    df_metric['All'] = df_metric.mean(axis=1)
-
-    # 保留有数据的列（包括 All）
-    df_metric = df_metric.loc[:, (df_metric.notnull().any())]
+    # df_metric['All'] = df_metric.mean(axis=1)
+    #
+    # # 保留有数据的列（包括 All）
+    # df_metric = df_metric.loc[:, (df_metric.notnull().any())]
 
     all_tables += df_to_latex_booktabs_single_metric_highlighted(df_metric, metric)
 
