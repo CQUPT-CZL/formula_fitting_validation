@@ -12,6 +12,7 @@ from src.metrics.CA import CA
 from src.metrics.CodeEq import CodeEq
 from src.metrics.base_metric import BaseMetric
 
+# 添加项目根目录到sys.path，方便模块导入
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import yaml
 import json
@@ -22,6 +23,7 @@ from src.model.code_executor import safe_exec
 from src.utils.my_logging import setup_logging
 from typing import List, Dict, Any, Optional
 
+# 评估单个样本对的函数
 def evaluate_pair(
     raw_data: List[Dict[str, Any]],
     code: str,
@@ -34,6 +36,7 @@ def evaluate_pair(
     variable_names = parse_variable_names(raw_data)
     logging.info(f"Evaluating pair {pair_index} with variables: {variable_names}")
 
+    # 动态执行生成的代码，获取函数
     generated_function = safe_exec(code, {})
 
     if generated_function:
@@ -43,6 +46,7 @@ def evaluate_pair(
 
         for sample_idx, sample in enumerate(raw_data):
             try:
+                # 检查样本是否包含所有变量和结果
                 if not all(var in sample for var in variable_names + ["结果"]):
                     logging.warning(f"Sample {sample_idx + 1} missing required keys")
                     continue
@@ -50,6 +54,7 @@ def evaluate_pair(
                 true_result = sample["结果"]
                 predicted_result = generated_function(**kwargs)
 
+                # 只保留数值型预测结果
                 if isinstance(predicted_result, (int, float)):
                     predictions.append(predicted_result)
                     ground_truths.append(true_result)
@@ -65,10 +70,9 @@ def evaluate_pair(
             if metric_name in ['mse', 'mae', 'rmse'] and valid_samples == 0:
                 results[metric_name] = None
                 continue
-            # print(metric)
+            # 计算各项指标
             try:
                 results[metric_name] = metric.compute(
-                    # predictions, ground_truths, raw_data, variable_names
                     predictions = predictions,
                     ground_truths = ground_truths,
                     raw_data = raw_data,
@@ -82,15 +86,15 @@ def evaluate_pair(
             except Exception as e:
                 logging.error(f"Error computing {metric.__class__.__name__}: {e}")
             logging.info(f"Evaluation results for pair {pair_index}: {results}")
-            # print(results)
-            # api 主观测评
         return results
     return None
 
+# 主函数，负责整体流程
 def main():
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     config_path = os.path.join(project_root, 'config', 'config.yaml')
 
+    # 检查配置文件是否存在
     if not os.path.exists(config_path):
         logging.error(f"Config file not found at: {config_path}")
         raise FileNotFoundError(f"Config file not found at: {config_path}")
@@ -100,7 +104,7 @@ def main():
 
     setup_logging(config)
 
-    # input_path
+    # 获取输入数据路径
     input_path = os.path.join(project_root, config['paths']['llm_with_data_code'])
     if not os.path.exists(input_path):
         logging.error(f"Data not found at: {input_path}")
@@ -125,6 +129,7 @@ def main():
     }
 
     try:
+        # 从配置文件获取需要的指标，若无则用默认值
         metric_names = config.get('metrics', ['MAE', 'RMSE', 'MSE', 'IAE'])  # 默认值可选
         metrics = [metric_classes[name]() for name in metric_names if name in metric_classes]
 
@@ -156,7 +161,7 @@ def main():
             for metric in metrics:
                 metric_results[metric.__class__.__name__.lower()].append(None)
 
-    # Save results
+    # 保存评估结果
     os.makedirs(os.path.join(project_root, config['paths']['output_dir']), exist_ok=True)
     results_path = os.path.join(project_root, config['paths']['output_dir'], file_name + '_results.json')
 
@@ -167,8 +172,7 @@ def main():
     else:
         old_results = {}
 
-    # 合并指标
-    # 遍历每个指标（例如 mae、rmse...）
+    # 合并新旧指标结果
     for metric_name, new_list in metric_results.items():
         if metric_name not in old_results:
             old_results[metric_name] = [None] * len(data)
@@ -183,7 +187,6 @@ def main():
     # 保存合并后的结果
     with open(results_path, 'w', encoding='utf-8') as f:
         json.dump(old_results, f, indent=2, ensure_ascii=False)
-
 
     logging.info(f"Saved results to {results_path}")
 
