@@ -3,12 +3,20 @@ import inspect
 import numpy as np
 import random
 import logging
+from .base_metric import BaseMetric
 
-class IAE():
+class IAE(BaseMetric):
     def compute(
-        self,
-        code: str,
-        gt_code: str,
+            self,
+            predictions: List[float],
+            ground_truths: List[float],
+            raw_data: List[Dict[str, Any]],
+            variable_names: List[str],
+            instruction: str,
+            prediction: str,
+            code: str,
+            gt_code: str,
+            idx: int
     ) -> float | None:
         try:
 
@@ -54,4 +62,22 @@ def get_func_from_code(code_str):
 def generate_inputs(func, n_samples=1000, input_range=(-20, 20)):
     sig = inspect.signature(func)
     param_count = len(sig.parameters)
-    return [tuple(random.uniform(*input_range) for _ in range(param_count)) for _ in range(n_samples)]
+
+    half = n_samples // 2
+
+    inputs = []
+
+    # 一半整数输入
+    for _ in range(half):
+        args = tuple(random.randint(*input_range) for _ in range(param_count))
+        inputs.append(args)
+
+    # 一半浮点输入
+    for _ in range(n_samples - half):
+        args = tuple(random.uniform(*input_range) for _ in range(param_count))
+        inputs.append(args)
+
+    random.shuffle(inputs)  # 打乱顺序，防止 bias
+
+    return inputs
+

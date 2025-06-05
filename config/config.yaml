@@ -2,12 +2,15 @@
 paths:
   raw_llm: data/raw_llm/v3/qwen_72b_api_pred.jsonl
   llm_with_data: data/llm_with_data/v3/qwen_72b_api_pred_with_data.json
-  llm_with_data_code: data/llm_with_data_code/v3/1.5b_all_sft_with_data_code.json
+  llm_with_data_code: data/llm_with_data_code/v3/qwen_72b_api_pred_with_data_code.json
   prompt: ../data/prompt/prompt.txt
   prompt_raw: ../data/prompt/prompt_with_raw.txt
   prompt_api_score: ../data/prompt/prompt_gen_api_score.txt
   prompt_code_judge: ../data/prompt/prompt_code_judge.txt
-  output_dir: output/results/v3/
+  prompt_sc_score: ../data/prompt/prompt_sc_score.txt
+  prompt_ca_score: ../data/prompt/prompt_ca_score.txt
+  prompt_lc_score: ../data/prompt/prompt_lc_score.txt
+  output_dir: output/results/v4/
   generated_data_dir: data/llm_with_data/v3/
   generated_code_dir: data/llm_with_data_code/v3/
   generated_api_pred_dir: data/raw_llm/v3/
@@ -21,8 +24,14 @@ model:
 #  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
   temperature: 0.01
 metrics:
-  - mae
-  - ice
+#  - mae
+#  - mse
+#  - rmse
+#  - codeqe
+#  - ca
+  - lc
+#  - sc
+#  - iae
 logging:
   level: INFO
   file: ../output/logs/evaluation.log
