@@ -2,7 +2,7 @@
 # FitJudge
 
 <p align="center">
-    <img src="data/others/logo.png"/>
+    <img src="data/others/logo2.png"/>
 </p>
 
 <p align="center">
@@ -47,7 +47,6 @@ FitJudge 是一个用于自动化评估和验证公式拟合效果的工具，�
 - `SC`（步骤完整性）：Step Completeness
 - `LC`（逻辑一致性）：Logic Consistency
 - `CA`（分析清晰度）：Clarity of Analysis
-- `CodeEq`（公式代码一致性）：Code Equation Consistency
 - `WIE`（空间平均绝对误差乘体积）：Weighted Integral Error
 
 ## 联系方式
